@@ -1,0 +1,2756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+    <Document id="BreedingHabitat_Central_Area">
+        <name>BreedingHabitat_Central_Area</name>
+        <Snippet></Snippet>
+        <Folder id="FeatureLayer0">
+            <name>BreedingHabitat_Central_Area</name>
+            <Snippet></Snippet>
+            <Placemark id="ID_00000">
+                <name>Aedes Mosquito Breeding Habitats : 2</name>
+                <Snippet></Snippet>
+                <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Aedes Mosquito Breeding Habitats : 2</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Polygon</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Breeding Habitats</td>
+
+<td>2</td>
+
+</tr>
+
+<tr>
+
+<td>NAME</td>
+
+<td>Aedes Mosquito Breeding Habitats : 2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTION</td>
+
+<td>Aedes Mosquito Breeding Habitats : 2</td>
+
+</tr>
+
+<tr>
+
+<td>INC_CRC</td>
+
+<td>D83A152144A4A981</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FMEL_UPD_D</td>
+
+<td>1/27/2017 11:04:20 AM</td>
+
+</tr>
+
+<tr>
+
+<td>X_ADDR</td>
+
+<td>29058.684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y_ADDR</td>
+
+<td>33798.182</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE_Length</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SHAPE_Area</td>
+
+<td>40000</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+                <styleUrl>#PolyStyle00</styleUrl>
+                <MultiGeometry>
+                    <Polygon>
+                        <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+                        <outerBoundaryIs><LinearRing><coordinates> 103.8419328581905,1.321028892923177,0 103.8437299631807,1.321028886010634,0 103.8437299707037,1.322837615268153,0 103.8419328644131,1.322837622190164,0 103.8419328581905,1.321028892923177,0</coordinates></LinearRing></outerBoundaryIs>
+                    </Polygon>
+                </MultiGeometry>
+            </Placemark>
+            <Placemark id="ID_00001">
+                <name>Aedes Mosquito Breeding Habitats : 1</name>
+                <Snippet></Snippet>
+                <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Polygon</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Breeding Habitats</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>NAME</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTION</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>INC_CRC</td>
+
+<td>98BB688F729104BF</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FMEL_UPD_D</td>
+
+<td>1/27/2017 11:04:20 AM</td>
+
+</tr>
+
+<tr>
+
+<td>X_ADDR</td>
+
+<td>30258.684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y_ADDR</td>
+
+<td>33998.182</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE_Length</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SHAPE_Area</td>
+
+<td>40000</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+                <styleUrl>#PolyStyle00</styleUrl>
+                <MultiGeometry>
+                    <Polygon>
+                        <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+                        <outerBoundaryIs><LinearRing><coordinates> 103.8527155019667,1.322837561012683,0 103.8545126081688,1.322837546232506,0 103.8545126235151,1.324646275369134,0 103.8527155160109,1.324646290169527,0 103.8527155019667,1.322837561012683,0</coordinates></LinearRing></outerBoundaryIs>
+                    </Polygon>
+                </MultiGeometry>
+            </Placemark>
+            <Placemark id="ID_00002">
+                <name>Aedes Mosquito Breeding Habitats : 1</name>
+                <Snippet></Snippet>
+                <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Polygon</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Breeding Habitats</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>NAME</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTION</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>INC_CRC</td>
+
+<td>13B028148A6F8725</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FMEL_UPD_D</td>
+
+<td>1/27/2017 11:04:20 AM</td>
+
+</tr>
+
+<tr>
+
+<td>X_ADDR</td>
+
+<td>31658.684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y_ADDR</td>
+
+<td>34398.182</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE_Length</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SHAPE_Area</td>
+
+<td>40000</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+                <styleUrl>#PolyStyle00</styleUrl>
+                <MultiGeometry>
+                    <Polygon>
+                        <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+                        <outerBoundaryIs><LinearRing><coordinates> 103.8652952912286,1.326454887976795,0 103.8670923998525,1.326454863963249,0 103.867092424381,1.328263592855166,0 103.8652953144513,1.328263616901467,0 103.8652952912286,1.326454887976795,0</coordinates></LinearRing></outerBoundaryIs>
+                    </Polygon>
+                </MultiGeometry>
+            </Placemark>
+            <Placemark id="ID_00003">
+                <name>Aedes Mosquito Breeding Habitats : 1</name>
+                <Snippet></Snippet>
+                <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Polygon</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Breeding Habitats</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>NAME</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTION</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>INC_CRC</td>
+
+<td>CBECC887B747254C</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FMEL_UPD_D</td>
+
+<td>1/27/2017 11:04:20 AM</td>
+
+</tr>
+
+<tr>
+
+<td>X_ADDR</td>
+
+<td>30258.684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y_ADDR</td>
+
+<td>38398.182</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE_Length</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SHAPE_Area</td>
+
+<td>40000</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+                <styleUrl>#PolyStyle00</styleUrl>
+                <MultiGeometry>
+                    <Polygon>
+                        <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+                        <outerBoundaryIs><LinearRing><coordinates> 103.8527158153751,1.362629596285545,0 103.8545129506363,1.36262958106061,0 103.8545129664444,1.364438309605835,0 103.8527158298418,1.364438324850987,0 103.8527158153751,1.362629596285545,0</coordinates></LinearRing></outerBoundaryIs>
+                    </Polygon>
+                </MultiGeometry>
+            </Placemark>
+            <Placemark id="ID_00004">
+                <name>Aedes Mosquito Breeding Habitats : 3</name>
+                <Snippet></Snippet>
+                <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Aedes Mosquito Breeding Habitats : 3</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Polygon</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Breeding Habitats</td>
+
+<td>3</td>
+
+</tr>
+
+<tr>
+
+<td>NAME</td>
+
+<td>Aedes Mosquito Breeding Habitats : 3</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTION</td>
+
+<td>Aedes Mosquito Breeding Habitats : 3</td>
+
+</tr>
+
+<tr>
+
+<td>INC_CRC</td>
+
+<td>1A306AF2C0D597A2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FMEL_UPD_D</td>
+
+<td>1/27/2017 11:04:20 AM</td>
+
+</tr>
+
+<tr>
+
+<td>X_ADDR</td>
+
+<td>30658.684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y_ADDR</td>
+
+<td>38398.182</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE_Length</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SHAPE_Area</td>
+
+<td>40000</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+                <styleUrl>#PolyStyle00</styleUrl>
+                <MultiGeometry>
+                    <Polygon>
+                        <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+                        <outerBoundaryIs><LinearRing><coordinates> 103.8563100858765,1.36262956448657,0 103.8581072210939,1.362629546563425,0 103.8581072395847,1.364438275062842,0 103.8563101030259,1.364438293009787,0 103.8563100858765,1.36262956448657,0</coordinates></LinearRing></outerBoundaryIs>
+                    </Polygon>
+                </MultiGeometry>
+            </Placemark>
+            <Placemark id="ID_00005">
+                <name>Aedes Mosquito Breeding Habitats : 3</name>
+                <Snippet></Snippet>
+                <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Aedes Mosquito Breeding Habitats : 3</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Polygon</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Breeding Habitats</td>
+
+<td>3</td>
+
+</tr>
+
+<tr>
+
+<td>NAME</td>
+
+<td>Aedes Mosquito Breeding Habitats : 3</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTION</td>
+
+<td>Aedes Mosquito Breeding Habitats : 3</td>
+
+</tr>
+
+<tr>
+
+<td>INC_CRC</td>
+
+<td>5840297F475277D3</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FMEL_UPD_D</td>
+
+<td>1/27/2017 11:04:20 AM</td>
+
+</tr>
+
+<tr>
+
+<td>X_ADDR</td>
+
+<td>29658.684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y_ADDR</td>
+
+<td>38798.182</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE_Length</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SHAPE_Area</td>
+
+<td>40000</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+                <styleUrl>#PolyStyle00</styleUrl>
+                <MultiGeometry>
+                    <Polygon>
+                        <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+                        <outerBoundaryIs><LinearRing><coordinates> 103.8473244303827,1.366247091069109,0 103.8491215683806,1.366247079861804,0 103.8491215801959,1.368055808407673,0 103.8473244408531,1.368055819629821,0 103.8473244303827,1.366247091069109,0</coordinates></LinearRing></outerBoundaryIs>
+                    </Polygon>
+                </MultiGeometry>
+            </Placemark>
+            <Placemark id="ID_00006">
+                <name>Aedes Mosquito Breeding Habitats : 1</name>
+                <Snippet></Snippet>
+                <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Polygon</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Breeding Habitats</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>NAME</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTION</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>INC_CRC</td>
+
+<td>8DF0D358393B2F0A</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FMEL_UPD_D</td>
+
+<td>1/25/2017 12:26:20 PM</td>
+
+</tr>
+
+<tr>
+
+<td>X_ADDR</td>
+
+<td>24258.684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y_ADDR</td>
+
+<td>31998.182</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE_Length</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SHAPE_Area</td>
+
+<td>40000</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+                <styleUrl>#PolyStyle00</styleUrl>
+                <MultiGeometry>
+                    <Polygon>
+                        <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+                        <outerBoundaryIs><LinearRing><coordinates> 103.7988025633046,1.304750104657038,0 103.8005996563845,1.304750128832441,0 103.8005996329901,1.306558858059339,0 103.7988025386258,1.306558833850411,0 103.7988025633046,1.304750104657038,0</coordinates></LinearRing></outerBoundaryIs>
+                    </Polygon>
+                </MultiGeometry>
+            </Placemark>
+            <Placemark id="ID_00007">
+                <name>Aedes Mosquito Breeding Habitats : 1</name>
+                <Snippet></Snippet>
+                <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Polygon</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Breeding Habitats</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>NAME</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTION</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>INC_CRC</td>
+
+<td>3B5D0BE3D2256129</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FMEL_UPD_D</td>
+
+<td>1/23/2017 5:37:25 PM</td>
+
+</tr>
+
+<tr>
+
+<td>X_ADDR</td>
+
+<td>29658.684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y_ADDR</td>
+
+<td>31598.182</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE_Length</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SHAPE_Area</td>
+
+<td>40000</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+                <styleUrl>#PolyStyle00</styleUrl>
+                <MultiGeometry>
+                    <Polygon>
+                        <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+                        <outerBoundaryIs><LinearRing><coordinates> 103.8473240626818,1.301132844960117,0 103.849121153449,1.301132834287124,0 103.8491211647011,1.302941563794232,0 103.8473240726531,1.302941574482066,0 103.8473240626818,1.301132844960117,0</coordinates></LinearRing></outerBoundaryIs>
+                    </Polygon>
+                </MultiGeometry>
+            </Placemark>
+            <Placemark id="ID_00008">
+                <name>Aedes Mosquito Breeding Habitats : 1</name>
+                <Snippet></Snippet>
+                <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Polygon</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Breeding Habitats</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>NAME</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTION</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>INC_CRC</td>
+
+<td>DE2597DA77C5231E</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FMEL_UPD_D</td>
+
+<td>1/23/2017 5:37:25 PM</td>
+
+</tr>
+
+<tr>
+
+<td>X_ADDR</td>
+
+<td>24058.684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y_ADDR</td>
+
+<td>32798.182</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE_Length</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SHAPE_Area</td>
+
+<td>40000</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+                <styleUrl>#PolyStyle00</styleUrl>
+                <MultiGeometry>
+                    <Polygon>
+                        <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+                        <outerBoundaryIs><LinearRing><coordinates> 103.7970053661906,1.311984995665092,0 103.7988024643844,1.31198502127354,0 103.7988024395688,1.313793750362132,0 103.7970053400835,1.313793724718368,0 103.7970053661906,1.311984995665092,0</coordinates></LinearRing></outerBoundaryIs>
+                    </Polygon>
+                </MultiGeometry>
+            </Placemark>
+            <Placemark id="ID_00009">
+                <name>Aedes Mosquito Breeding Habitats : 2</name>
+                <Snippet></Snippet>
+                <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Aedes Mosquito Breeding Habitats : 2</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Polygon</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Breeding Habitats</td>
+
+<td>2</td>
+
+</tr>
+
+<tr>
+
+<td>NAME</td>
+
+<td>Aedes Mosquito Breeding Habitats : 2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTION</td>
+
+<td>Aedes Mosquito Breeding Habitats : 2</td>
+
+</tr>
+
+<tr>
+
+<td>INC_CRC</td>
+
+<td>B10140085223E2B9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FMEL_UPD_D</td>
+
+<td>1/23/2017 5:37:25 PM</td>
+
+</tr>
+
+<tr>
+
+<td>X_ADDR</td>
+
+<td>28858.684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y_ADDR</td>
+
+<td>38598.182</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE_Length</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SHAPE_Area</td>
+
+<td>40000</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+                <styleUrl>#PolyStyle00</styleUrl>
+                <MultiGeometry>
+                    <Polygon>
+                        <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+                        <outerBoundaryIs><LinearRing><coordinates> 103.840135873186,1.364438393741948,0 103.8419330098856,1.364438387953072,0 103.8419330163128,1.366247116574896,0 103.8401358782701,1.366247122371449,0 103.840135873186,1.364438393741948,0</coordinates></LinearRing></outerBoundaryIs>
+                    </Polygon>
+                </MultiGeometry>
+            </Placemark>
+            <Placemark id="ID_00010">
+                <name>Aedes Mosquito Breeding Habitats : 1</name>
+                <Snippet></Snippet>
+                <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Polygon</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Breeding Habitats</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>NAME</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTION</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>INC_CRC</td>
+
+<td>4DBEC235EDEB0F1A</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FMEL_UPD_D</td>
+
+<td>1/23/2017 5:37:25 PM</td>
+
+</tr>
+
+<tr>
+
+<td>X_ADDR</td>
+
+<td>30258.684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y_ADDR</td>
+
+<td>38598.182</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE_Length</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SHAPE_Area</td>
+
+<td>40000</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+                <styleUrl>#PolyStyle00</styleUrl>
+                <MultiGeometry>
+                    <Polygon>
+                        <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+                        <outerBoundaryIs><LinearRing><coordinates> 103.8527158298418,1.364438324850987,0 103.8545129664444,1.364438309605835,0 103.8545129822734,1.366247038123762,0 103.8527158443278,1.36624705338913,0 103.8527158298418,1.364438324850987,0</coordinates></LinearRing></outerBoundaryIs>
+                    </Polygon>
+                </MultiGeometry>
+            </Placemark>
+            <Placemark id="ID_00011">
+                <name>Aedes Mosquito Breeding Habitats : 1</name>
+                <Snippet></Snippet>
+                <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Polygon</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Breeding Habitats</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>NAME</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTION</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>INC_CRC</td>
+
+<td>E4F8B9B570396A9B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FMEL_UPD_D</td>
+
+<td>1/23/2017 5:37:25 PM</td>
+
+</tr>
+
+<tr>
+
+<td>X_ADDR</td>
+
+<td>29058.684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y_ADDR</td>
+
+<td>38798.182</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE_Length</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SHAPE_Area</td>
+
+<td>40000</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+                <styleUrl>#PolyStyle00</styleUrl>
+                <MultiGeometry>
+                    <Polygon>
+                        <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+                        <outerBoundaryIs><LinearRing><coordinates> 103.8419330163128,1.366247116574896,0 103.843730154347,1.366247109425655,0 103.8437301621275,1.368055838010677,0 103.8419330227485,1.368055845169386,0 103.8419330163128,1.366247116574896,0</coordinates></LinearRing></outerBoundaryIs>
+                    </Polygon>
+                </MultiGeometry>
+            </Placemark>
+            <Placemark id="ID_00012">
+                <name>Aedes Mosquito Breeding Habitats : 1</name>
+                <Snippet></Snippet>
+                <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Polygon</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Breeding Habitats</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>NAME</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTION</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>INC_CRC</td>
+
+<td>CEB386C9AE036E65</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FMEL_UPD_D</td>
+
+<td>1/23/2017 5:37:25 PM</td>
+
+</tr>
+
+<tr>
+
+<td>X_ADDR</td>
+
+<td>29258.684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y_ADDR</td>
+
+<td>38998.182</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE_Length</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SHAPE_Area</td>
+
+<td>40000</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+                <styleUrl>#PolyStyle00</styleUrl>
+                <MultiGeometry>
+                    <Polygon>
+                        <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+                        <outerBoundaryIs><LinearRing><coordinates> 103.8437301621275,1.368055838010677,0 103.8455273014964,1.368055829497489,0 103.8455273106339,1.369864558043881,0 103.8437301699184,1.369864566568329,0 103.8437301621275,1.368055838010677,0</coordinates></LinearRing></outerBoundaryIs>
+                    </Polygon>
+                </MultiGeometry>
+            </Placemark>
+            <Placemark id="ID_00013">
+                <name>Aedes Mosquito Breeding Habitats : 3</name>
+                <Snippet></Snippet>
+                <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Aedes Mosquito Breeding Habitats : 3</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Polygon</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Breeding Habitats</td>
+
+<td>3</td>
+
+</tr>
+
+<tr>
+
+<td>NAME</td>
+
+<td>Aedes Mosquito Breeding Habitats : 3</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTION</td>
+
+<td>Aedes Mosquito Breeding Habitats : 3</td>
+
+</tr>
+
+<tr>
+
+<td>INC_CRC</td>
+
+<td>2A7995B29615040C</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FMEL_UPD_D</td>
+
+<td>1/20/2017 12:23:20 PM</td>
+
+</tr>
+
+<tr>
+
+<td>X_ADDR</td>
+
+<td>26858.684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y_ADDR</td>
+
+<td>30998.182</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE_Length</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SHAPE_Area</td>
+
+<td>40000</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+                <styleUrl>#PolyStyle00</styleUrl>
+                <MultiGeometry>
+                    <Polygon>
+                        <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+                        <outerBoundaryIs><LinearRing><coordinates> 103.8221648151081,1.295706670340232,0 103.8239619020757,1.295706677671304,0 103.8239618954245,1.297515407301169,0 103.8221648071814,1.297515399959861,0 103.8221648151081,1.295706670340232,0</coordinates></LinearRing></outerBoundaryIs>
+                    </Polygon>
+                </MultiGeometry>
+            </Placemark>
+            <Placemark id="ID_00014">
+                <name>Aedes Mosquito Breeding Habitats : 1</name>
+                <Snippet></Snippet>
+                <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Polygon</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Breeding Habitats</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>NAME</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTION</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>INC_CRC</td>
+
+<td>A6A3217B692F6CEF</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FMEL_UPD_D</td>
+
+<td>1/20/2017 12:23:20 PM</td>
+
+</tr>
+
+<tr>
+
+<td>X_ADDR</td>
+
+<td>28458.684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y_ADDR</td>
+
+<td>30798.182</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE_Length</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SHAPE_Area</td>
+
+<td>40000</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+                <styleUrl>#PolyStyle00</styleUrl>
+                <MultiGeometry>
+                    <Polygon>
+                        <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+                        <outerBoundaryIs><LinearRing><coordinates> 103.8365415087353,1.293897963392432,0 103.8383385944536,1.293897960465003,0 103.8383385980011,1.295706690138201,0 103.8365415110091,1.295706693069724,0 103.8365415087353,1.293897963392432,0</coordinates></LinearRing></outerBoundaryIs>
+                    </Polygon>
+                </MultiGeometry>
+            </Placemark>
+            <Placemark id="ID_00015">
+                <name>Aedes Mosquito Breeding Habitats : 1</name>
+                <Snippet></Snippet>
+                <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Polygon</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Breeding Habitats</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>NAME</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTION</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>INC_CRC</td>
+
+<td>AB58EDD95BA9FF91</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FMEL_UPD_D</td>
+
+<td>1/20/2017 12:23:20 PM</td>
+
+</tr>
+
+<tr>
+
+<td>X_ADDR</td>
+
+<td>30858.684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y_ADDR</td>
+
+<td>39598.182</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE_Length</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SHAPE_Area</td>
+
+<td>40000</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+                <styleUrl>#PolyStyle00</styleUrl>
+                <MultiGeometry>
+                    <Polygon>
+                        <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+                        <outerBoundaryIs><LinearRing><coordinates> 103.8581073324068,1.373481917149739,0 103.8599044756745,1.373481897723943,0 103.8599044956646,1.37529062603344,0 103.8581073510449,1.375290645484827,0 103.8581073324068,1.373481917149739,0</coordinates></LinearRing></outerBoundaryIs>
+                    </Polygon>
+                </MultiGeometry>
+            </Placemark>
+            <Placemark id="ID_00016">
+                <name>Aedes Mosquito Breeding Habitats : 1</name>
+                <Snippet></Snippet>
+                <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Polygon</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Breeding Habitats</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>NAME</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTION</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>INC_CRC</td>
+
+<td>A7FCBA26B1A747D6</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FMEL_UPD_D</td>
+
+<td>1/19/2017 12:25:20 PM</td>
+
+</tr>
+
+<tr>
+
+<td>X_ADDR</td>
+
+<td>27458.684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y_ADDR</td>
+
+<td>32798.182</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE_Length</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SHAPE_Area</td>
+
+<td>40000</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+                <styleUrl>#PolyStyle00</styleUrl>
+                <MultiGeometry>
+                    <Polygon>
+                        <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+                        <outerBoundaryIs><LinearRing><coordinates> 103.8275560389279,1.311985254352083,0 103.8293531374612,1.31198525787845,0 103.8293531346009,1.31379398729334,0 103.8275560347761,1.31379398376211,0 103.8275560389279,1.311985254352083,0</coordinates></LinearRing></outerBoundaryIs>
+                    </Polygon>
+                </MultiGeometry>
+            </Placemark>
+            <Placemark id="ID_00017">
+                <name>Aedes Mosquito Breeding Habitats : 1</name>
+                <Snippet></Snippet>
+                <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Polygon</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Breeding Habitats</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>NAME</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTION</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>INC_CRC</td>
+
+<td>3C5E8AF38D76E349</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FMEL_UPD_D</td>
+
+<td>1/19/2017 12:25:20 PM</td>
+
+</tr>
+
+<tr>
+
+<td>X_ADDR</td>
+
+<td>29258.684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y_ADDR</td>
+
+<td>34398.182</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE_Length</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SHAPE_Area</td>
+
+<td>40000</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+                <styleUrl>#PolyStyle00</styleUrl>
+                <MultiGeometry>
+                    <Polygon>
+                        <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+                        <outerBoundaryIs><LinearRing><coordinates> 103.8437299857807,1.326455073703758,0 103.8455270946671,1.326455065449534,0 103.8455271035268,1.328263794616288,0 103.8437299933346,1.32826380288177,0 103.8437299857807,1.326455073703758,0</coordinates></LinearRing></outerBoundaryIs>
+                    </Polygon>
+                </MultiGeometry>
+            </Placemark>
+            <Placemark id="ID_00018">
+                <name>Aedes Mosquito Breeding Habitats : 1</name>
+                <Snippet></Snippet>
+                <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Polygon</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Breeding Habitats</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>NAME</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTION</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>INC_CRC</td>
+
+<td>43FD806D4A9B7782</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FMEL_UPD_D</td>
+
+<td>1/27/2017 11:04:20 AM</td>
+
+</tr>
+
+<tr>
+
+<td>X_ADDR</td>
+
+<td>29458.684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y_ADDR</td>
+
+<td>38798.182</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE_Length</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SHAPE_Area</td>
+
+<td>40000</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+                <styleUrl>#PolyStyle00</styleUrl>
+                <MultiGeometry>
+                    <Polygon>
+                        <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+                        <outerBoundaryIs><LinearRing><coordinates> 103.8455272923709,1.366247100923726,0 103.8473244303827,1.366247091069109,0 103.8473244408531,1.368055819629821,0 103.8455273014964,1.368055829497489,0 103.8455272923709,1.366247100923726,0</coordinates></LinearRing></outerBoundaryIs>
+                    </Polygon>
+                </MultiGeometry>
+            </Placemark>
+            <Placemark id="ID_00019">
+                <name>Aedes Mosquito Breeding Habitats : 2</name>
+                <Snippet></Snippet>
+                <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Aedes Mosquito Breeding Habitats : 2</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Polygon</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Breeding Habitats</td>
+
+<td>2</td>
+
+</tr>
+
+<tr>
+
+<td>NAME</td>
+
+<td>Aedes Mosquito Breeding Habitats : 2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTION</td>
+
+<td>Aedes Mosquito Breeding Habitats : 2</td>
+
+</tr>
+
+<tr>
+
+<td>INC_CRC</td>
+
+<td>B44D68A9B215469E</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FMEL_UPD_D</td>
+
+<td>1/23/2017 5:37:25 PM</td>
+
+</tr>
+
+<tr>
+
+<td>X_ADDR</td>
+
+<td>30658.684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y_ADDR</td>
+
+<td>39198.182</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE_Length</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SHAPE_Area</td>
+
+<td>40000</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+                <styleUrl>#PolyStyle00</styleUrl>
+                <MultiGeometry>
+                    <Polygon>
+                        <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+                        <outerBoundaryIs><LinearRing><coordinates> 103.8563101546108,1.369864478415506,0 103.8581072952043,1.369864460397163,0 103.8581073137932,1.371673188787172,0 103.8563101718513,1.371673206829315,0 103.8563101546108,1.369864478415506,0</coordinates></LinearRing></outerBoundaryIs>
+                    </Polygon>
+                </MultiGeometry>
+            </Placemark>
+            <Placemark id="ID_00020">
+                <name>Aedes Mosquito Breeding Habitats : 1</name>
+                <Snippet></Snippet>
+                <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Polygon</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Breeding Habitats</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>NAME</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTION</td>
+
+<td>Aedes Mosquito Breeding Habitats : 1</td>
+
+</tr>
+
+<tr>
+
+<td>INC_CRC</td>
+
+<td>136C6C58C31779B5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FMEL_UPD_D</td>
+
+<td>1/20/2017 12:23:20 PM</td>
+
+</tr>
+
+<tr>
+
+<td>X_ADDR</td>
+
+<td>28658.684</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y_ADDR</td>
+
+<td>28798.182</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE_Length</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SHAPE_Area</td>
+
+<td>40000</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+                <styleUrl>#PolyStyle00</styleUrl>
+                <MultiGeometry>
+                    <Polygon>
+                        <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+                        <outerBoundaryIs><LinearRing><coordinates> 103.8383385592518,1.275810662315182,0 103.8401356323264,1.275810658165568,0 103.8401356370801,1.277619388090128,0 103.8383385627497,1.277619392245627,0 103.8383385592518,1.275810662315182,0</coordinates></LinearRing></outerBoundaryIs>
+                    </Polygon>
+                </MultiGeometry>
+            </Placemark>
+        </Folder>
+        <Style id="PolyStyle00">
+            <LabelStyle>
+                <color>00000000</color>
+                <scale>0.000000</scale>
+            </LabelStyle>
+            <LineStyle>
+                <color>ff6e6e6e</color>
+                <width>0.400000</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>ffcef5ce</color>
+                <outline>1</outline>
+            </PolyStyle>
+        </Style>
+    </Document>
+</kml>
