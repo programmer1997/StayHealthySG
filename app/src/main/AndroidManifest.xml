@@ -36,6 +36,10 @@
             android:name="MapsActivity"
             android:label="@string/title_activity_maps">
 
+
+        </activity>
+        <activity android:name=".Dengue"
+            android:label="Dengue">
         </activity>
         <activity
            android:name=".Diseases"

@@ -18,7 +18,7 @@ public class Diseases extends AppCompatActivity{
     }
 
     public void displayMap(View view){
-        Intent intent=new Intent(Diseases.this,MapsActivity.class);
+        Intent intent=new Intent(Diseases.this,Dengue.class);
         startActivity(intent);
 
 
