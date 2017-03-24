@@ -28,19 +28,19 @@ public class Dengue extends AppCompatActivity implements OnMapReadyCallback{
 
         //Symptoms
         TabHost.TabSpec spec = host.newTabSpec("Symptoms");
-        spec.setContent(R.id.tab1);
+        spec.setContent(R.id.dengueSymptoms);
         spec.setIndicator("Symptoms");
         host.addTab(spec);
 
         //Prevention
         spec = host.newTabSpec("Prevention");
-        spec.setContent(R.id.tab2);
+        spec.setContent(R.id.denguePrevention);
         spec.setIndicator("Prevention");
         host.addTab(spec);
 
         //Clusters
         spec = host.newTabSpec("Clusters");
-        spec.setContent(R.id.tab3);
+        spec.setContent(R.id.dengueClusters);
         spec.setIndicator("Clusters");
         host.addTab(spec);
 
@@ -57,5 +57,6 @@ public class Dengue extends AppCompatActivity implements OnMapReadyCallback{
     @Override
     public void onMapReady(GoogleMap googleMap) {
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(1.3521, 103.8198 ), 11.0f));
+
     }
 }

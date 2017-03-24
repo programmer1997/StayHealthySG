@@ -26,7 +26,7 @@
 
 
                 <LinearLayout
-                    android:id="@+id/tab1"
+                    android:id="@+id/dengueSymptoms"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -46,7 +46,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/tab2"
+                    android:id="@+id/denguePrevention"
                     android:layout_width="match_parent"
                     android:layout_height="168dp"
                     android:orientation="vertical">
@@ -63,7 +63,7 @@
 
                 </LinearLayout>
                 <LinearLayout
-                    android:id="@+id/tab3"
+                    android:id="@+id/dengueClusters"
                     android:layout_width="match_parent"
                     android:layout_height="fill_parent"
                     android:orientation="vertical">

@@ -1,32 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/dengue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="Dengue"
-        android:onClick="displayMap"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+    <TabHost
+        android:id="@+id/mainTabHost"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
 
-    <Button
-        android:id="@+id/malaria"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/dengue"
-        android:layout_centerVertical="true"
-        android:text="Malaria" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/zika"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/malaria"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="38dp"
-        android:text="Zika" />
-</RelativeLayout>
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+
+
+                <RelativeLayout
+                    android:id="@+id/Diseases"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/dengue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="48dp"
+                        android:onClick="dengue"
+                        android:text="Dengue" />
+
+                    <Button
+                        android:id="@+id/malaria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/dengue"
+                        android:layout_centerVertical="true"
+                        android:onClick="malaria"
+                        android:text="Malaria" />
+
+                    <Button
+                        android:id="@+id/zika"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/malaria"
+                        android:onClick="zika"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="38dp"
+                        android:text="Zika" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:map="http://schemas.android.com/apk/res-auto"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:id="@+id/safestRoute"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        tools:context="com.example.ajinkya.stayhealthysg.MapsActivity" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>
+
