@@ -11,13 +11,13 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 
-import static com.example.ajinkya.stayhealthysg.R.id.dengueMapActivity;
+import static com.example.ajinkya.stayhealthysg.R.id.malariaMapActivity;
 
 /**
- * Created by rach on 25-Mar-17.
+ * Created by Ajinkya on 24/3/17.
  */
 
-public class Malaria extends AppCompatActivity implements OnMapReadyCallback {
+public class Malaria extends AppCompatActivity implements OnMapReadyCallback{
     MapFragment fragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

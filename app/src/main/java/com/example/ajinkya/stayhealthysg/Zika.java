@@ -23,7 +23,7 @@ public class Zika extends AppCompatActivity implements OnMapReadyCallback{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.malaria);
+        setContentView(R.layout.zika);
         TabHost host=(TabHost) findViewById(R.id.zikaTabHost);
         host.setup();
 
@@ -45,9 +45,9 @@ public class Zika extends AppCompatActivity implements OnMapReadyCallback{
         spec.setIndicator("Clusters");
         host.addTab(spec);
 
-        //SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-        //      .findFragmentById(malariaMapActivity);
-        //mapFragment.getMapAsync(this);
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+             .findFragmentById(zikaMapActivity);
+        mapFragment.getMapAsync(this);
 
 
 

@@ -36,7 +36,7 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps"></activity>
         <activity
-            android:name=".StayHealthySG"
+            android:name=".SplashScreen"
             android:label="StayHealthySG"
             android:theme="@android:style/Theme.Black.NoTitleBar">
             <intent-filter>
@@ -48,6 +48,12 @@
         <activity
             android:name=".Dengue"
             android:label="Dengue"></activity>
+        <activity
+            android:name=".Malaria"
+            android:label="Malaria"></activity>
+        <activity
+            android:name=".Zika"
+            android:label="Zika"></activity>
         <activity
             android:name=".Diseases"
             android:label="StayHealthySG"></activity>

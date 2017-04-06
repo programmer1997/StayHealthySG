@@ -17,6 +17,8 @@ import com.google.android.gms.maps.model.LatLng;
  */
 
 public class Diseases extends AppCompatActivity implements OnMapReadyCallback{
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +32,7 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback{
         spec.setIndicator("Diseases");
         host.addTab(spec);
 
-        //Prevention
+        //SafestRoute
         spec = host.newTabSpec("SafestRoute");
         spec.setContent(R.id.safestRoute);
         spec.setIndicator("SafestRoute");
@@ -43,23 +45,31 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback{
 
     }
 
+    public void buttonClick(View view)
+    {
+        switch(view.getId())
+        {
+            case R.id.dengueButton:
+                Intent intent1 = new Intent(Diseases.this,Dengue.class);
+                startActivity(intent1);
 
-    // evoked when you click the dengue button
-    public void dengue(View view){
-        Intent intent = new Intent(Diseases.this, Dengue.class);
-        startActivity(intent);
+                break;
 
+            case R.id.malariaButton:
+                Intent intent2 = new Intent(Diseases.this,Malaria.class);
+                startActivity(intent2);
+
+                break;
+
+            case R.id.zikaButton:
+                Intent intent3 = new Intent(Diseases.this,Zika.class);
+                startActivity(intent3);
+                break;
+        }
     }
 
-    // evoked when you click the malaria button
-    public void malaria(View view){
 
-    }
 
-    // evoked when you click the zika button
-    public void zika(View view){
-
-    }
 
 
     @Override
