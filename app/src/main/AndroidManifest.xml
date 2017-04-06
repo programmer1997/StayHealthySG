@@ -40,23 +40,43 @@
             android:label="StayHealthySG"
             android:theme="@android:style/Theme.Black.NoTitleBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.example.ajinkya.stayhealthysg.SplashScreen" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".Dengue"
-            android:label="Dengue"></activity>
+            android:label="Dengue">
+            <intent-filter>
+                <action android:name="com.example.ajinkya.stayhealthysg.Dengue" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Malaria"
-            android:label="Malaria"></activity>
+            android:label="Malaria">
+            <intent-filter>
+                <action android:name="com.example.ajinkya.stayhealthysg.Malaria" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Zika"
-            android:label="Zika"></activity>
+            android:label="Zika">
+            <intent-filter>
+                <action android:name="com.example.ajinkya.stayhealthysg.Zika" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Diseases"
-            android:label="StayHealthySG"></activity>
+            android:label="StayHealthySG">
+            <intent-filter>
+                <action android:name="com.example.ajinkya.stayhealthysg.Diseases" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
