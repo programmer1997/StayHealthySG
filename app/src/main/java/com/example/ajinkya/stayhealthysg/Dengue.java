@@ -26,8 +26,14 @@ public class Dengue extends AppCompatActivity implements OnMapReadyCallback{
         TabHost host=(TabHost) findViewById(R.id.dengueTabHost);
         host.setup();
 
+        //About
+        TabHost.TabSpec spec = host.newTabSpec("About");
+        spec.setContent(R.id.dengueAbout);
+        spec.setIndicator("About");
+        host.addTab(spec);
+
         //Symptoms
-        TabHost.TabSpec spec = host.newTabSpec("Symptoms");
+        spec = host.newTabSpec("Symptoms");
         spec.setContent(R.id.dengueSymptoms);
         spec.setIndicator("Symptoms");
         host.addTab(spec);
@@ -36,6 +42,12 @@ public class Dengue extends AppCompatActivity implements OnMapReadyCallback{
         spec = host.newTabSpec("Prevention");
         spec.setContent(R.id.denguePrevention);
         spec.setIndicator("Prevention");
+        host.addTab(spec);
+
+        //Treatment
+        spec = host.newTabSpec("Treatment");
+        spec.setContent(R.id.dengueTreatment);
+        spec.setIndicator("Treatment");
         host.addTab(spec);
 
         //Clusters

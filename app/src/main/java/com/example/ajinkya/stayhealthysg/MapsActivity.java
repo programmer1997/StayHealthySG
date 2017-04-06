@@ -32,21 +32,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(map_activity);
         mapFragment.getMapAsync(this);
-
-
-
-
-
-
-
-
-
-
     }
-
-
-
-
     public void onMapReady(GoogleMap googleMap) {
 
         KmlLayer kmlLayer= null;
@@ -71,14 +57,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             e.printStackTrace();
         }
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(1.3521, 103.8198 ), 11.0f));
-
-
-
-
-
-
-
-
         }
     }
 
