@@ -1,5 +1,4 @@
 package com.example.ajinkya.stayhealthysg;
-
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TabHost;
@@ -12,11 +11,9 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 
 import static com.example.ajinkya.stayhealthysg.R.id.dengueMapActivity;
-
 /**
  * Created by Ajinkya on 24/3/17.
  */
-
 public class Dengue extends AppCompatActivity implements OnMapReadyCallback{
     MapFragment fragment;
     @Override
