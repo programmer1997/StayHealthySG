@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:enabled = "true" >
+    <PreferenceCategory
+        android:title="@string/title_notifications"
+        android:key="myKey">
+        <SwitchPreference
+            android:key="pref_infectious"
+            android:title="Infectious Disease"
+            android:summary="Turn on/off for infectious disease notifications"
+            android:defaultValue = "true" />
+        <SwitchPreference
+            android:key="pref_weather"
+            android:title="Weather"
+            android:summary="Turn on/off for weather notifications"
+            android:defaultValue = "true" />
+        <SwitchPreference
+            android:key="pref_haze"
+            android:title="Haze"
+            android:summary="Turn on/off for haze notifications"
+            android:defaultValue= "true" />
+        <SwitchPreference
+            android:key="pref_uv"
+            android:title="UV"
+            android:summary="Turn on/off for UV notifications"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Font Size"
+        android:key="font_key">
+        <ListPreference
+            android:key="font_list_value"
+            android:summary="Change the font size"
+            android:entries="@array/list_font"
+            android:entryValues="@array/list_font_values" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Privacy Policy">
+        <intent android:action="android.intent.action.VIEW"
+            android:data="http://google.com" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Feedback Form">
+        <Preference
+            android:summary="Please give our apps 5 star :D" />
+        <intent android:action="android.intent.action.VIEW"
+            android:data="http://google.com" />
+    </PreferenceCategory>
+</PreferenceScreen>

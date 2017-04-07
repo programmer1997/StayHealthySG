@@ -1,12 +1,12 @@
 package com.example.ajinkya.stayhealthysg;
-<<<<<<< HEAD
+//<<<<<<< HEAD
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
-=======
->>>>>>> 4bc3b5cffb47ff528d5e152ce936a7b7845d0c3f
+//=======
+//>>>>>>> 4bc3b5cffb47ff528d5e152ce936a7b7845d0c3f
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -65,7 +65,7 @@ public class Malaria extends AppCompatActivity implements OnMapReadyCallback{
         host.addTab(spec);
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(malariaMapActivity);
+                .findFragmentById(R.id.malariaMapActivity);
         mapFragment.getMapAsync(this);
 
 

@@ -36,12 +36,12 @@
             android:label="StayHealthySG"
             android:theme="@android:style/Theme.Black.NoTitleBar">
             <intent-filter>
-<<<<<<< HEAD
+        <!--<<<<<<< HEAD -->
                 <action android:name="com.example.ajinkya.stayhealthysg.SplashScreen" />
 
 =======
                 <action android:name="android.intent.action.MAIN" />
->>>>>>> 4bc3b5cffb47ff528d5e152ce936a7b7845d0c3f
+<!-->>>>>>> 4bc3b5cffb47ff528d5e152ce936a7b7845d0c3f -->
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
