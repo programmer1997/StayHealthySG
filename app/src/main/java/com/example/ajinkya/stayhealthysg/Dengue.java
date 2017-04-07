@@ -1,9 +1,12 @@
 package com.example.ajinkya.stayhealthysg;
+<<<<<<< HEAD
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+=======
+>>>>>>> 4bc3b5cffb47ff528d5e152ce936a7b7845d0c3f
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -19,11 +22,9 @@ import com.google.android.gms.maps.model.LatLng;
 import java.util.Date;
 
 import static com.example.ajinkya.stayhealthysg.R.id.dengueMapActivity;
-
 /**
  * Created by Ajinkya on 24/3/17.
  */
-
 public class Dengue extends AppCompatActivity implements OnMapReadyCallback{
     MapFragment fragment;
     @Override

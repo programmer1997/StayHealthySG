@@ -34,8 +34,14 @@ public class Zika extends AppCompatActivity implements OnMapReadyCallback{
         TabHost host=(TabHost) findViewById(R.id.zikaTabHost);
         host.setup();
 
+        //About
+        TabHost.TabSpec spec = host.newTabSpec("About");
+        spec.setContent(R.id.zikaAbout);
+        spec.setIndicator("About");
+        host.addTab(spec);
+
         //Symptoms
-        TabHost.TabSpec spec = host.newTabSpec("Symptoms");
+        spec = host.newTabSpec("Symptoms");
         spec.setContent(R.id.zikaSymptoms);
         spec.setIndicator("Symptoms");
         host.addTab(spec);
@@ -44,6 +50,12 @@ public class Zika extends AppCompatActivity implements OnMapReadyCallback{
         spec = host.newTabSpec("Prevention");
         spec.setContent(R.id.zikaPrevention);
         spec.setIndicator("Prevention");
+        host.addTab(spec);
+
+        //Treatment
+        spec = host.newTabSpec("Treatment");
+        spec.setContent(R.id.zikaTreatment);
+        spec.setIndicator("Treatment");
         host.addTab(spec);
 
         //Clusters
