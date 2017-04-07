@@ -13,12 +13,13 @@ import android.preference.SwitchPreference;
  */
 
 public class SettingsActivity extends PreferenceActivity{
-    SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-    ListPreference myPref = (ListPreference) findPreference("font_list_value");
+
+    //SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+    /*ListPreference myPref = (ListPreference) findPreference("font_list_value");
     SwitchPreference infectiousPref = (SwitchPreference) findPreference("pref_infectious");
     SwitchPreference weatherPref = (SwitchPreference) findPreference("pref_weather");
     SwitchPreference hazePref = (SwitchPreference) findPreference("pref_haze");
-    SwitchPreference uvPref =(SwitchPreference) findPreference("pref_uv");
+    SwitchPreference uvPref =(SwitchPreference) findPreference("pref_uv");*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +28,7 @@ public class SettingsActivity extends PreferenceActivity{
         getFragmentManager().beginTransaction()
                 .replace(android.R.id.content, new SettingsFragment())
                 .commit();
-
+        /*
         myPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
             public boolean onPreferenceClick(Preference preference) {
@@ -126,5 +127,6 @@ public class SettingsActivity extends PreferenceActivity{
                 return false;
             }
         });
+         */
     }
 }

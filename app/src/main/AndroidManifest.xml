@@ -77,5 +77,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name = ".SettingsActivity"
+            android:label = "Settings">
+            <intent-filter>
+                <action android:name="com.example.ajinkya.stayhealthysg.SettingsActivity" />
+                <category android:name="android.intent.category.PREFERENCE" />
+            </intent-filter>
+        </activity>
     </application>
 </manifest>

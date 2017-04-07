@@ -33,18 +33,13 @@
             android:key="font_list_value"
             android:summary="Change the font size"
             android:entries="@array/list_font"
-            android:entryValues="@array/list_font_values" />
+            android:entryValues="@array/list_font_values"
+            android:defaultValue = "@string/defaultFontSize" />
     </PreferenceCategory>
     <PreferenceCategory
         android:title="Privacy Policy">
-        <intent android:action="android.intent.action.VIEW"
-            android:data="http://google.com" />
     </PreferenceCategory>
     <PreferenceCategory
         android:title="Feedback Form">
-        <Preference
-            android:summary="Please give our apps 5 star :D" />
-        <intent android:action="android.intent.action.VIEW"
-            android:data="http://google.com" />
     </PreferenceCategory>
 </PreferenceScreen>

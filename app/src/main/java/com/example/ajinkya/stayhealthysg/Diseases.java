@@ -57,7 +57,6 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback{
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
-        super.onCreateOptionsMenu(menu);
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.navigation, menu);
         return true;
@@ -65,14 +64,13 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback{
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
-        super.onOptionsItemSelected(item);
         switch (item.getItemId()) {
             case R.id.settings:
-
-                Intent intent = new Intent(this, SettingsActivity.class);
+                Intent intent = new Intent(Diseases.this, SettingsActivity.class);
                 startActivity(intent);
+                break;
         }
-        return false;
+        return super.onOptionsItemSelected(item);
     }
 
     public void buttonClick(View view)
