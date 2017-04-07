@@ -25,45 +25,82 @@
                 android:layout_height="fill_parent">
 
 
-                <RelativeLayout
+                <LinearLayout
                     android:id="@+id/Diseases"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:weightSum="1">
+                    android:orientation="vertical">
 
-                    <Button
-                        android:id="@+id/dengueButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-                        android:onClick="buttonClick"
-                        android:layout_marginTop="48dp"
-                        android:text="Dengue" />
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fillViewport="true">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="427dp">
 
-                    <Button
-                        android:id="@+id/malariaButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignStart="@+id/dengueButton"
-                        android:layout_centerVertical="true"
-                        android:onClick="buttonClick"
-                        android:text="Malaria" />
+                            <Button
+                                android:id="@+id/dengueButton"
+                                android:backgroundTint="@color/button_color"
+                                android:textColor="@color/button_text"
+                                android:textSize="30sp"
+                                android:paddingBottom="20dp"
+                                android:paddingTop="20dp"
+                                android:paddingRight="20dp"
+                                android:paddingLeft="20dp"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="48dp"
+                                android:onClick="dengue"
+                                android:text="Dengue" />
 
-                    <Button
-                        android:id="@+id/zikaButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignEnd="@+id/malariaButton"
-                        android:layout_alignParentBottom="true"
-                        android:onClick="buttonClick"
-                        android:layout_marginBottom="38dp"
-                        android:text="Zika" />
+                            <Button
+                                android:id="@+id/malariaButton"
+                                android:backgroundTint="@color/button_color"
+                                android:textColor="@color/button_text"
+                                android:textSize="30sp"
+                                android:paddingBottom="20dp"
+                                android:paddingTop="20dp"
+                                android:paddingRight="20dp"
+                                android:paddingLeft="20dp"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@+id/dengueButton"
+                                android:layout_marginTop="48dp"
+                                android:layout_centerVertical="true"
+                                android:onClick="malaria"
+                                android:text="Malaria" />
 
+                            <Button
+                                android:id="@+id/zikaButton"
+                                android:backgroundTint="@color/button_color"
+                                android:textColor="@color/button_text"
+                                android:textSize="30sp"
+                                android:paddingBottom="20dp"
+                                android:paddingTop="20dp"
+                                android:paddingRight="20dp"
+                                android:paddingLeft="20dp"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignEnd="@+id/malariaButton"
+                                android:layout_marginTop="48dp"
+                                android:onClick="zika"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="40dp"
+                                android:text="Zika" />
 
-                </RelativeLayout>
+                        </RelativeLayout>
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/tab2"

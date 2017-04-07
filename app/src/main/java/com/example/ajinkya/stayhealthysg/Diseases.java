@@ -106,12 +106,14 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback{
 
     // evoked when you click the malaria button
     public void malaria(View view){
-
+        Intent intent = new Intent(Diseases.this, Malaria.class);
+        startActivity(intent);
     }
 
     // evoked when you click the zika button
     public void zika(View view){
-
+        Intent intent = new Intent(Diseases.this, Zika.class);
+        startActivity(intent);
     }
 
 
