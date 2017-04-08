@@ -13,6 +13,7 @@ import android.nfc.Tag;
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.PreferenceManager;
+import android.support.annotation.NonNull;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -22,11 +23,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TabHost;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.Date;
 
@@ -34,9 +39,11 @@ import java.util.Date;
  * Created by Ajinkya on 11/3/17.
  */
 
-public class Diseases extends AppCompatActivity implements OnMapReadyCallback{
-    double currentLatitude;
-    double currentLongitude;
+public class Diseases extends AppCompatActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener{
+    double currentLatitude = 1.3521;
+    double currentLongitude = 103.8198;
+    private GoogleApiClient mGoogleApiClient;
+    private Location mLastLocation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,6 +97,14 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback{
         } catch (SecurityException e){
             Log.d("Disease.class","Error in GPS");
         }
+        if (mGoogleApiClient == null) {
+            mGoogleApiClient = new GoogleApiClient.Builder(this)
+                    .addConnectionCallbacks(this)
+                    .addOnConnectionFailedListener(this)
+                    .addApi(LocationServices.API)
+                    .build();
+        }
+
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.safestRoute);
         mapFragment.getMapAsync(this);
@@ -101,6 +116,29 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback{
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.navigation, menu);
         return true;
+    }
+
+    protected void onStart() {
+        mGoogleApiClient.connect();
+        super.onStart();
+    }
+
+    protected void onStop() {
+        mGoogleApiClient.disconnect();
+        super.onStop();
+    }
+
+    public void onConnected(Bundle connectionHint) {
+        mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+        if(mLastLocation != null){
+            currentLatitude = mLastLocation.getLatitude();
+            currentLatitude = mLastLocation.getLongitude();
+        }
+    }
+
+    @Override
+    public void onConnectionSuspended(int i) {
+
     }
 
     @Override
@@ -161,10 +199,9 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback{
     @Override
     public void onMapReady(GoogleMap googleMap) {
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(1.3521, 103.8198 ), 11.0f));
-
-
-
-
+        LatLng sydney = new LatLng(currentLatitude, currentLongitude);
+        googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker is on"));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 
     public void general_alert()
@@ -277,5 +314,9 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback{
     }
 
 
+    @Override
+    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+
+    }
 }
 
