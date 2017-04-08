@@ -5,11 +5,17 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
+import android.location.LocationProvider;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.PreferenceManager;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -29,7 +35,8 @@ import java.util.Date;
  */
 
 public class Diseases extends AppCompatActivity implements OnMapReadyCallback{
-
+    double currentLatitude;
+    double currentLongitude;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +57,39 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback{
         spec.setIndicator("SafestRoute");
         host.addTab(spec);
 
+        final LocationManager locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
+        final String locationProvider = locationManager.GPS_PROVIDER;
+        final LocationListener locationListener = new LocationListener() {
+            public void onLocationChanged(Location location) {
+                currentLatitude = location.getLatitude();
+                currentLongitude = location.getLongitude();
+            }
 
+            public void onStatusChanged(String provider, int status, Bundle extras) {
+                if(status != LocationProvider.AVAILABLE) {
+                    Location lastKnowLocation = locationManager.getLastKnownLocation(provider);
+                    currentLatitude = lastKnowLocation.getLatitude();
+                    currentLongitude = lastKnowLocation.getLongitude();
+                }
+            }
+
+            public void onProviderEnabled(String provider) {
+                Location location = locationManager.getLastKnownLocation(provider);
+                currentLatitude = location.getLatitude();
+                currentLongitude = location.getLongitude();
+            }
+
+            public void onProviderDisabled(String provider) {
+                Location lastKnowLocation = locationManager.getLastKnownLocation(provider);
+                currentLatitude = lastKnowLocation.getLatitude();
+                currentLongitude = lastKnowLocation.getLongitude();
+            }
+        };
+        try {
+            locationManager.requestLocationUpdates(locationProvider, 0, 0, locationListener);
+        } catch (SecurityException e){
+            Log.d("Disease.class","Error in GPS");
+        }
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.safestRoute);
         mapFragment.getMapAsync(this);
