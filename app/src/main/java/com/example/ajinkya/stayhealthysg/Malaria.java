@@ -40,6 +40,12 @@ public class Malaria extends AppCompatActivity implements OnMapReadyCallback{
         spec.setIndicator("About");
         host.addTab(spec);
 
+        //Clusters
+        spec = host.newTabSpec("Clusters");
+        spec.setContent(R.id.malariaClusters);
+        spec.setIndicator("Clusters");
+        host.addTab(spec);
+
         //Symptoms
         spec = host.newTabSpec("Symptoms");
         spec.setContent(R.id.malariaSymptoms);
@@ -56,12 +62,6 @@ public class Malaria extends AppCompatActivity implements OnMapReadyCallback{
         spec = host.newTabSpec("Treatment");
         spec.setContent(R.id.malariaTreatment);
         spec.setIndicator("Treatment");
-        host.addTab(spec);
-
-        //Clusters
-        spec = host.newTabSpec("Clusters");
-        spec.setContent(R.id.malariaClusters);
-        spec.setIndicator("Clusters");
         host.addTab(spec);
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()

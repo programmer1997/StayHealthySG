@@ -40,6 +40,12 @@ public class Zika extends AppCompatActivity implements OnMapReadyCallback{
         spec.setIndicator("About");
         host.addTab(spec);
 
+        //Clusters
+        spec = host.newTabSpec("Clusters");
+        spec.setContent(R.id.zikaClusters);
+        spec.setIndicator("Clusters");
+        host.addTab(spec);
+
         //Symptoms
         spec = host.newTabSpec("Symptoms");
         spec.setContent(R.id.zikaSymptoms);
@@ -56,12 +62,6 @@ public class Zika extends AppCompatActivity implements OnMapReadyCallback{
         spec = host.newTabSpec("Treatment");
         spec.setContent(R.id.zikaTreatment);
         spec.setIndicator("Treatment");
-        host.addTab(spec);
-
-        //Clusters
-        spec = host.newTabSpec("Clusters");
-        spec.setContent(R.id.zikaClusters);
-        spec.setIndicator("Clusters");
         host.addTab(spec);
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()

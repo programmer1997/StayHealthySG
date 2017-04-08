@@ -40,6 +40,12 @@ public class Dengue extends AppCompatActivity implements OnMapReadyCallback{
         spec.setIndicator("About");
         host.addTab(spec);
 
+        //Clusters
+        spec = host.newTabSpec("Clusters");
+        spec.setContent(R.id.dengueClusters);
+        spec.setIndicator("Clusters");
+        host.addTab(spec);
+
         //Symptoms
         spec = host.newTabSpec("Symptoms");
         spec.setContent(R.id.dengueSymptoms);
@@ -56,12 +62,6 @@ public class Dengue extends AppCompatActivity implements OnMapReadyCallback{
         spec = host.newTabSpec("Treatment");
         spec.setContent(R.id.dengueTreatment);
         spec.setIndicator("Treatment");
-        host.addTab(spec);
-
-        //Clusters
-        spec = host.newTabSpec("Clusters");
-        spec.setContent(R.id.dengueClusters);
-        spec.setIndicator("Clusters");
         host.addTab(spec);
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
