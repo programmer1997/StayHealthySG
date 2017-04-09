@@ -225,9 +225,15 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
         googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker is on"));
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
         KmlLayer kmlLayer = null;
+        KmlLayer kmlLayerZika=null;
+        KmlLayer kmlLayerMalaria=null;
         try{
             kmlLayer = new KmlLayer(googleMap, R.raw.dengue,getApplicationContext());
             kmlLayer.addLayerToMap();
+            kmlLayerZika = new KmlLayer(googleMap,R.raw.zika,getApplicationContext());
+            kmlLayerZika.addLayerToMap();
+            kmlLayerMalaria = new KmlLayer(googleMap,R.raw.malaria,getApplicationContext());
+            kmlLayerMalaria.addLayerToMap();
         } catch(XmlPullParserException e){
             Log.d(TAG, "GG");
             e.printStackTrace();
