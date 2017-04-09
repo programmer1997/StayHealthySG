@@ -32,7 +32,11 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.maps.android.data.kml.KmlLayer;
 
+import org.xmlpull.v1.XmlPullParserException;
+
+import java.io.IOException;
 import java.util.Date;
 
 /**
@@ -44,6 +48,7 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
     double currentLongitude = 103.8198;
     private GoogleApiClient mGoogleApiClient;
     private Location mLastLocation;
+    private static final String TAG = Diseases.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,28 +79,40 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
 
             public void onStatusChanged(String provider, int status, Bundle extras) {
                 if(status != LocationProvider.AVAILABLE) {
-                    Location lastKnowLocation = locationManager.getLastKnownLocation(provider);
-                    currentLatitude = lastKnowLocation.getLatitude();
-                    currentLongitude = lastKnowLocation.getLongitude();
+                    try {
+                        Location lastKnowLocation = locationManager.getLastKnownLocation(provider);
+                        currentLatitude = lastKnowLocation.getLatitude();
+                        currentLongitude = lastKnowLocation.getLongitude();
+                    } catch (SecurityException e){
+                        e.printStackTrace();
+                    }
                 }
             }
 
             public void onProviderEnabled(String provider) {
-                Location location = locationManager.getLastKnownLocation(provider);
-                currentLatitude = location.getLatitude();
-                currentLongitude = location.getLongitude();
+                try {
+                    Location location = locationManager.getLastKnownLocation(provider);
+                    currentLatitude = location.getLatitude();
+                    currentLongitude = location.getLongitude();
+                } catch(SecurityException e){
+                    e.printStackTrace();
+                }
             }
 
             public void onProviderDisabled(String provider) {
-                Location lastKnowLocation = locationManager.getLastKnownLocation(provider);
-                currentLatitude = lastKnowLocation.getLatitude();
-                currentLongitude = lastKnowLocation.getLongitude();
+                try {
+                    Location lastKnowLocation = locationManager.getLastKnownLocation(provider);
+                    currentLatitude = lastKnowLocation.getLatitude();
+                    currentLongitude = lastKnowLocation.getLongitude();
+                } catch(SecurityException e){
+                    e.printStackTrace();
+                }
             }
         };
         try {
             locationManager.requestLocationUpdates(locationProvider, 0, 0, locationListener);
         } catch (SecurityException e){
-            Log.d("Disease.class","Error in GPS");
+            e.printStackTrace();
         }
         if (mGoogleApiClient == null) {
             mGoogleApiClient = new GoogleApiClient.Builder(this)
@@ -129,10 +146,15 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
     }
 
     public void onConnected(Bundle connectionHint) {
-        mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-        if(mLastLocation != null){
-            currentLatitude = mLastLocation.getLatitude();
-            currentLatitude = mLastLocation.getLongitude();
+        try {
+            mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+            if (mLastLocation != null) {
+                currentLatitude = mLastLocation.getLatitude();
+                currentLatitude = mLastLocation.getLongitude();
+            }
+        } catch (SecurityException e){
+            e.printStackTrace();
+            Log.d(TAG, "Goblok");
         }
     }
 
@@ -202,6 +224,16 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
         LatLng sydney = new LatLng(currentLatitude, currentLongitude);
         googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker is on"));
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        KmlLayer kmlLayer = null;
+        try{
+            kmlLayer = new KmlLayer(googleMap, R.raw.dengue,getApplicationContext());
+            kmlLayer.addLayerToMap();
+        } catch(XmlPullParserException e){
+            Log.d(TAG, "GG");
+            e.printStackTrace();
+        } catch (IOException e){
+            e.printStackTrace();
+        }
     }
 
     public void general_alert()
