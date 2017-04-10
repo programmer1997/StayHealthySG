@@ -1,10 +1,13 @@
 package com.example.ajinkya.stayhealthysg;
 
+import android.*;
+import android.Manifest;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -14,7 +17,9 @@ import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.NotificationCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
@@ -26,6 +31,7 @@ import android.widget.TabHost;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.location.places.Places;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -44,14 +50,19 @@ import java.util.Date;
  */
 
 public class Diseases extends AppCompatActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener{
-    double currentLatitude = 1.3521;
-    double currentLongitude = 103.8198;
-    private GoogleApiClient mGoogleApiClient;
-    private Location mLastLocation;
-    private static final String TAG = Diseases.class.getSimpleName();
+    protected double currentLatitude = 1.3521;
+    protected double currentLongitude = 103.8198;
+    protected GoogleApiClient mGoogleApiClient;
+
+    protected Location mLastKnownLocation;
+    protected GoogleMap mMap;
+    protected static final String TAG = Diseases.class.getSimpleName();
+    private boolean mLocationPermissionGranted;
+    private static final int PERMISSION_REQUEST_ACCESS_FINE_LOCATION = 1;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
+        Log.v(TAG, "Call onCreate");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.diseases);
         TabHost host=(TabHost) findViewById(R.id.mainTabHost);
@@ -69,7 +80,7 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
         spec.setIndicator("SafestRoute");
         host.addTab(spec);
 
-        final LocationManager locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
+        /*final LocationManager locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
         final String locationProvider = locationManager.GPS_PROVIDER;
         final LocationListener locationListener = new LocationListener() {
             public void onLocationChanged(Location location) {
@@ -111,23 +122,23 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
         };
         try {
             locationManager.requestLocationUpdates(locationProvider, 0, 0, locationListener);
-        } catch (SecurityException e){
+        } catch (SecurityException e) {
             e.printStackTrace();
         }
-        if (mGoogleApiClient == null) {
-            mGoogleApiClient = new GoogleApiClient.Builder(this)
-                    .addConnectionCallbacks(this)
-                    .addOnConnectionFailedListener(this)
-                    .addApi(LocationServices.API)
-                    .build();
-        }
+        */
+        mGoogleApiClient = new GoogleApiClient.Builder(this)
+                .addConnectionCallbacks(this)
+                .addOnConnectionFailedListener(this)
+                .addApi(LocationServices.API)
+                .addApi(Places.GEO_DATA_API)
+                .addApi(Places.PLACE_DETECTION_API)
+                .build();
 
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.safestRoute);
-        mapFragment.getMapAsync(this);
+        mGoogleApiClient.connect();
 
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
     }
+
 
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -135,27 +146,13 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
         return true;
     }
 
-    protected void onStart() {
-        mGoogleApiClient.connect();
-        super.onStart();
-    }
 
-    protected void onStop() {
-        mGoogleApiClient.disconnect();
-        super.onStop();
-    }
-
+    @Override
     public void onConnected(Bundle connectionHint) {
-        try {
-            mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-            if (mLastLocation != null) {
-                currentLatitude = mLastLocation.getLatitude();
-                currentLatitude = mLastLocation.getLongitude();
-            }
-        } catch (SecurityException e){
-            e.printStackTrace();
-            Log.d(TAG, "Goblok");
-        }
+        Log.v(TAG, "Call onConnected");
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.safestRoute);
+        mapFragment.getMapAsync(this);
     }
 
     @Override
@@ -215,18 +212,25 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
         startActivity(intent);
     }
 
-
-
-
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(1.3521, 103.8198 ), 11.0f));
-        LatLng sydney = new LatLng(currentLatitude, currentLongitude);
-        googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker is on"));
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        Log.v(TAG, "Call onMapReady");
+
+        mMap = googleMap;
+
+        updateLocationUI();
+
+        getDeviceLocation();
+
         KmlLayer kmlLayer = null;
         KmlLayer kmlLayerZika=null;
         KmlLayer kmlLayerMalaria=null;
+
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(1.3521, 103.8198 ), 11.0f));
+        Log.v(TAG, "Lang " + currentLatitude + "long " + currentLongitude);
+        LatLng sydney = new LatLng(currentLatitude, currentLongitude);
+        googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker is on"));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
         try{
             kmlLayer = new KmlLayer(googleMap, R.raw.dengue,getApplicationContext());
             kmlLayer.addLayerToMap();
@@ -239,6 +243,46 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
             e.printStackTrace();
         } catch (IOException e){
             e.printStackTrace();
+        }
+    }
+
+    private void updateLocationUI() {
+        Log.v(TAG, "Call updateLocationUI");
+        if(mMap == null){
+            return;
+        }
+        if (ContextCompat.checkSelfPermission(this.getApplicationContext(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+            mLocationPermissionGranted = true;
+        }
+        else {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, PERMISSION_REQUEST_ACCESS_FINE_LOCATION);
+        }
+
+        if(mLocationPermissionGranted){
+            mMap.setMyLocationEnabled(true);
+            mMap.getUiSettings().setMyLocationButtonEnabled(true);
+        }
+        else{
+            mMap.setMyLocationEnabled(false);
+            mMap.getUiSettings().setMyLocationButtonEnabled(false);
+            mLastKnownLocation = null;
+        }
+    }
+
+    private void getDeviceLocation() {
+        Log.v(TAG, "Call getDeviceLocation");
+        if(ContextCompat.checkSelfPermission(this.getApplicationContext(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
+            mLocationPermissionGranted = true;
+        }
+        else {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, PERMISSION_REQUEST_ACCESS_FINE_LOCATION);
+        }
+
+        if(mLocationPermissionGranted){
+            Log.v(TAG, "mLocationPermissionGranted");
+            mLastKnownLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+            currentLatitude = mLastKnownLocation.getLatitude();
+            currentLongitude = mLastKnownLocation.getLongitude();
         }
     }
 
