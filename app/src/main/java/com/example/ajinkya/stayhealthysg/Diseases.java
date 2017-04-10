@@ -49,6 +49,8 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
+import static com.example.ajinkya.stayhealthysg.R.id.tab2;
+
 /**
  * Created by Ajinkya on 11/3/17.
  */
@@ -80,7 +82,7 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
 
         //SafestRoute
         spec = host.newTabSpec("SafestRoute");
-        spec.setContent(R.id.safestRoute);
+        spec.setContent(R.id.tab2);
         spec.setIndicator("SafestRoute");
         host.addTab(spec);
 
@@ -179,7 +181,7 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
             Address address = addressList.get(0);
             LatLng latLng = new LatLng(address.getLatitude(), address.getLongitude());
             mMap.addMarker(new MarkerOptions().position(latLng).title("Marker"));
-            mMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
+            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,13.5f));
         }
     }
 

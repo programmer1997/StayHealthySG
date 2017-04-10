@@ -106,7 +106,7 @@
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginRight="10dp"
                                 android:layout_marginBottom="10dp"
-                                android:text="Zika virus (ZIKV) is a member of the virus family Flaviviridae. It is spread by daytime-active Aedes mosquitoes, such as A. aegypti and A. albopictus."
+                                android:text="Zika virus (ZIKA) is a member of the virus family Flaviviridae. It is spread by daytime-active Aedes mosquitoes, such as A. aegypti and A. albopictus."
                                 android:textSize="15sp" />
                         </LinearLayout>
                     </ScrollView>
