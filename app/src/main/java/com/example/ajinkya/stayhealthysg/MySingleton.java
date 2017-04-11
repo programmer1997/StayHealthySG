@@ -20,8 +20,6 @@ public class MySingleton {
     private ImageLoader mImageLoader;
     private static Context mCtx;
 
-    protected static final String TAG = Diseases.class.getSimpleName();
-
     private MySingleton(Context context){
         mCtx = context;
         mRequestQueue = getRequestQueue();
@@ -43,7 +41,6 @@ public class MySingleton {
 
     public static synchronized MySingleton getInstance(Context context) {
         if(mInstance == null){
-            Log.v(TAG, "Already called");
             mInstance = new MySingleton(context);
         }
         return mInstance;

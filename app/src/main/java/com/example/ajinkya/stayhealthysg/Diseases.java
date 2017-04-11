@@ -179,6 +179,7 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
                 .addApi(Places.PLACE_DETECTION_API)
                 .build();
 
+        mGoogleApiClient.connect();
         final SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
         String font_pref = sharedPref.getString("font_list_value", "");
         Log.v(TAG, font_pref);
