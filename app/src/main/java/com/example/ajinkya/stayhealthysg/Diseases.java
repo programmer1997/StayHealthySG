@@ -58,6 +58,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.maps.android.data.kml.KmlLayer;
@@ -91,6 +92,7 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
     private int north_psi;
     private int west_psi;
 
+
     private int uv_now;
     private int uv_minus_one;
     private int uv_minus_two;
@@ -104,6 +106,7 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
     protected static final String TAG = Diseases.class.getSimpleName();
     private boolean mLocationPermissionGranted;
     private static final int PERMISSION_REQUEST_ACCESS_FINE_LOCATION = 1;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -124,6 +127,7 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
         spec.setContent(R.id.tab2);
         spec.setIndicator("SafestRoute");
         host.addTab(spec);
+
 
         /*final LocationManager locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
         final String locationProvider = locationManager.GPS_PROVIDER;
@@ -195,9 +199,10 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
             }
         };
 
+
         sharedPref.registerOnSharedPreferenceChangeListener(listener);
 
-        setHaze();
+        //setHaze();
         setUV();
     }
 
@@ -448,6 +453,7 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
         return super.onOptionsItemSelected(item);
     }
 
+
     public void buttonClick(View view)
     {
         switch(view.getId())
@@ -468,6 +474,11 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
                 Intent intent3 = new Intent(Diseases.this,Zika.class);
                 startActivity(intent3);
                 break;
+
+            case R.id.hazeButton:
+                Intent intent4 = new Intent(Diseases.this,MarkerHaze.class);
+                startActivity(intent4);
+                break;
         }
     }
 
@@ -486,6 +497,11 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
     // evoked when you click the zika button
     public void zika(View view){
         Intent intent = new Intent(Diseases.this, Zika.class);
+        startActivity(intent);
+    }
+
+    public void haze(View view){
+        Intent intent = new Intent(Diseases.this,MarkerHaze.class);
         startActivity(intent);
     }
 

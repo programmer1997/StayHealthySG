@@ -92,5 +92,12 @@
                 <category android:name="android.intent.category.PREFERENCE" />
             </intent-filter>
         </activity>
+        <activity android:name=".MarkerHaze"
+            android:label="MarkerHaze">
+            <intent-filter>
+                <action android:name="com.example.ajinkya.stayheatlthysg.MarkerHaze"/>
+                <category android:name="android.intent.categoty.LAUNCHER"/>
+            </intent-filter>
+        </activity>
     </application>
 </manifest>

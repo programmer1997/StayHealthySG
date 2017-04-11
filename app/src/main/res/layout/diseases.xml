@@ -258,13 +258,18 @@ Dengue Fever is an illness caused by infection with a virus..."
                                 android:onClick="onMapSearch"
                                 android:text="Search" />
                         </LinearLayout>
+                        <Button
+                            android:id="@+id/hazeButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:text="Haze"
+                            android:clickable="true"
+                            android:onClick="haze"/>
 
                     </FrameLayout>
 
                 </LinearLayout>
-
-
-
             </FrameLayout>
 
         </LinearLayout>
