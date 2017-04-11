@@ -80,6 +80,7 @@ public class Dengue extends AppCompatActivity implements OnMapReadyCallback{
 
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 
+        dengue_alert();
 
 }
 
