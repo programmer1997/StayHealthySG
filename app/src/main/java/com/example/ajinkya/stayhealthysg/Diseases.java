@@ -145,7 +145,7 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
             public void onProviderEnabled(String provider) {
                 try {
                     Location location = locationManager.getLastKnownLocation(provider);
-                    currentLatitude = location.getLatitude();
+                    currentLatitude = location.getLati tude();
                     currentLongitude = location.getLongitude();
                 } catch(SecurityException e){
                     e.printStackTrace();
