@@ -86,7 +86,7 @@ public class ClusterNotification extends AppCompatActivity
 
 
       Intent launchIntent = new Intent();
-      launchIntent.setClassName("com.example.ajinkya.stayhealthysg", ".Malaria");
+      launchIntent.setClassName("com.example.ajinkya.stayhealthysg", "com.example.ajinkya.stayhealthysg.Dengue");
       PendingIntent launchPendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, launchIntent,PendingIntent.FLAG_ONE_SHOT);
       builder.setContentIntent(launchPendingIntent);
 
