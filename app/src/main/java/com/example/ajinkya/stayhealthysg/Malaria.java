@@ -44,11 +44,10 @@ import java.io.IOException;
 
 import java.util.Date;
 
-import static com.example.ajinkya.stayhealthysg.R.id.malariaMapActivity;
 /**
  * Created by Ajinkya on 24/3/17.
  */
-public class Malaria extends AppCompatActivity implements OnMapReadyCallback,GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener{
+public class Malaria extends AppCompatActivity implements OnMapReadyCallback{
     double currentLatitude = 1.3521;
     double currentLongitude = 103.8198;
     private GoogleApiClient mGoogleApiClient;
@@ -92,100 +91,17 @@ public class Malaria extends AppCompatActivity implements OnMapReadyCallback,Goo
         spec.setIndicator("Treatment");
         host.addTab(spec);
 
-        final LocationManager locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
-        final String locationProvider = locationManager.GPS_PROVIDER;
-        final LocationListener locationListener = new LocationListener() {
-            public void onLocationChanged(Location location) {
-                currentLatitude = location.getLatitude();
-                currentLongitude = location.getLongitude();
-            }
-
-            public void onStatusChanged(String provider, int status, Bundle extras) {
-                if(status != LocationProvider.AVAILABLE) {
-                    try {
-                        Location lastKnowLocation = locationManager.getLastKnownLocation(provider);
-                        currentLatitude = lastKnowLocation.getLatitude();
-                        currentLongitude = lastKnowLocation.getLongitude();
-                    } catch (SecurityException e){
-                        e.printStackTrace();
-                    }
-                }
-            }
-
-            public void onProviderEnabled(String provider) {
-                try {
-                    Location location = locationManager.getLastKnownLocation(provider);
-                    currentLatitude = location.getLatitude();
-                    currentLongitude = location.getLongitude();
-                } catch(SecurityException e){
-                    e.printStackTrace();
-                }
-            }
-
-            public void onProviderDisabled(String provider) {
-                try {
-                    Location lastKnowLocation = locationManager.getLastKnownLocation(provider);
-                    currentLatitude = lastKnowLocation.getLatitude();
-                    currentLongitude = lastKnowLocation.getLongitude();
-                } catch(SecurityException e){
-                    e.printStackTrace();
-                }
-            }
-        };
-        try {
-            locationManager.requestLocationUpdates(locationProvider, 0, 0, locationListener);
-        } catch (SecurityException e){
-            e.printStackTrace();
-        }
-        if (mGoogleApiClient == null) {
-            mGoogleApiClient = new GoogleApiClient.Builder(this)
-                    .addConnectionCallbacks(this)
-                    .addOnConnectionFailedListener(this)
-                    .addApi(LocationServices.API)
-                    .build();
-        }
-
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.malariaMapActivity);
         mapFragment.getMapAsync(this);
 
-        PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
-
-
+        malaria_alert();
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.navigation, menu);
         return true;
-    }
-
-    protected void onStart() {
-        mGoogleApiClient.connect();
-        super.onStart();
-    }
-
-    protected void onStop() {
-        mGoogleApiClient.disconnect();
-        super.onStop();
-    }
-
-    public void onConnected(Bundle connectionHint) {
-        try {
-            mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-            if (mLastLocation != null) {
-                currentLatitude = mLastLocation.getLatitude();
-                currentLatitude = mLastLocation.getLongitude();
-            }
-        } catch (SecurityException e){
-            e.printStackTrace();
-            Log.d(TAG, "Goblokss");
-        }
-    }
-
-    @Override
-    public void onConnectionSuspended(int i) {
-
     }
 
     @Override
@@ -199,56 +115,36 @@ public class Malaria extends AppCompatActivity implements OnMapReadyCallback,Goo
         return super.onOptionsItemSelected(item);
     }
 
-
-
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(1.3521, 103.8198 ), 11.0f));
-        LatLng sydney = new LatLng(currentLatitude, currentLongitude);
-        googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker is on"));
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-        KmlLayer kmlLayer = null;
-        try{
-            kmlLayer = new KmlLayer(googleMap, R.raw.malaria,getApplicationContext());
-            kmlLayer.addLayerToMap();
-        } catch(XmlPullParserException e){
-            Log.d(TAG, "ZO");
-            e.printStackTrace();
-        } catch (IOException e){
-            e.printStackTrace();
+        KML.addKML(googleMap, R.raw.malaria, getApplicationContext());
+    }
+
+    public void malaria_alert()
+    {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        if(prefs.getBoolean("pref_malaria", true)) {
+            int uni_notif;
+
+            uni_notif = (int) ((new Date().getTime() / 1000L) % Integer.MAX_VALUE);
+
+
+            NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
+                    .setSmallIcon(R.mipmap.ic_launcher)
+                    .setContentTitle("You have a notification!")
+                    .setContentText("New MALARIA alert!")
+                    .setAutoCancel(true);
+
+
+            Intent launchIntent = new Intent();
+            launchIntent.setClassName("com.example.ajinkya.stayhealthysg", ".Malaria");
+            PendingIntent launchPendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, launchIntent, Intent.FLAG_ACTIVITY_NEW_TASK);
+            builder.setContentIntent(launchPendingIntent);
+
+
+            // Add as notification
+            NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+            manager.notify(uni_notif, builder.build());
         }
     }
-
-    private void malaria_alert()
-    {
-        int uni_notif;
-
-        uni_notif = (int) ((new Date().getTime() / 1000L) % Integer.MAX_VALUE);
-
-
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
-                .setSmallIcon(R.mipmap.ic_launcher)
-                .setContentTitle("You have a notification!")
-                .setContentText("New MALARIA alert!")
-                .setAutoCancel(true)
-                ;
-
-
-        Intent launchIntent = new Intent();
-        launchIntent.setClassName("com.example.ajinkya.stayhealthysg", ".Malaria");
-        PendingIntent launchPendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, launchIntent, Intent.FLAG_ACTIVITY_NEW_TASK);
-        builder.setContentIntent(launchPendingIntent);
-
-
-        // Add as notification
-        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        manager.notify(uni_notif, builder.build());
-
-    }
-
-    @Override
-    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-
-    }
-
 }

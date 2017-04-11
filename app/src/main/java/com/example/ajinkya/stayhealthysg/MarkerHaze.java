@@ -63,7 +63,6 @@ public class MarkerHaze extends AppCompatActivity implements GoogleMap.OnInfoWin
     private int north_psi;
     private int west_psi;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,10 +75,6 @@ public class MarkerHaze extends AppCompatActivity implements GoogleMap.OnInfoWin
                 .findFragmentById(R.id.hazeMap);
         mapFragment.getMapAsync(this);
 
-
-
-        PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
-
     }
 
     @Override
@@ -87,11 +82,8 @@ public class MarkerHaze extends AppCompatActivity implements GoogleMap.OnInfoWin
         Log.v(TAG,"bts");
         mMap = map;
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(1.3521, 103.8198 ), 11.0f));
-        addMarkersToMap();
 
         mMap.setOnInfoWindowClickListener(this);
-
-
     }
 
 
@@ -154,11 +146,17 @@ public class MarkerHaze extends AppCompatActivity implements GoogleMap.OnInfoWin
             public void onResponse(JSONObject response){
                 Log.v(TAG,"Inilah hasil JSON " + response.toString());
                 try {
+                    Log.v(TAG,"East " + east_psi);
+                    Log.v(TAG,"East " + central_psi);
+                    Log.v(TAG,"East " + south_psi);
+                    Log.v(TAG,"East " + north_psi);
+                    Log.v(TAG,"East " + west_psi);
                     east_psi = response.getJSONArray("items").getJSONObject(0).getJSONObject("readings").getJSONObject("psi_twenty_four_hourly").getInt("east");
                     central_psi = response.getJSONArray("items").getJSONObject(0).getJSONObject("readings").getJSONObject("psi_twenty_four_hourly").getInt("central");
                     south_psi = response.getJSONArray("items").getJSONObject(0).getJSONObject("readings").getJSONObject("psi_twenty_four_hourly").getInt("south");
                     north_psi = response.getJSONArray("items").getJSONObject(0).getJSONObject("readings").getJSONObject("psi_twenty_four_hourly").getInt("north");
                     west_psi = response.getJSONArray("items").getJSONObject(0).getJSONObject("readings").getJSONObject("psi_twenty_four_hourly").getInt("west");
+                    addMarkersToMap();
                 } catch(JSONException e){
                     Log.v(TAG, "There is some error");
                 }

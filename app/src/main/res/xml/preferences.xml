@@ -6,24 +6,24 @@
         android:title="@string/title_notifications"
         android:key="myKey">
         <SwitchPreference
-            android:key="pref_infectious"
-            android:title="Infectious Disease"
-            android:summary="Turn on/off for infectious disease notifications"
+            android:key="pref_general"
+            android:title="General Notification"
+            android:summary="Turn on/off for general notifications"
             android:defaultValue = "true" />
         <SwitchPreference
-            android:key="pref_weather"
-            android:title="Weather"
-            android:summary="Turn on/off for weather notifications"
+            android:key="pref_dengue"
+            android:title="Dengue Notification"
+            android:summary="Turn on/off for dengue notifications"
             android:defaultValue = "true" />
         <SwitchPreference
-            android:key="pref_haze"
-            android:title="Haze"
-            android:summary="Turn on/off for haze notifications"
+            android:key="pref_malaria"
+            android:title="Malaria"
+            android:summary="Turn on/off for malaria notifications"
             android:defaultValue= "true" />
         <SwitchPreference
-            android:key="pref_uv"
-            android:title="UV"
-            android:summary="Turn on/off for UV notifications"
+            android:key="pref_zika"
+            android:title="Zika"
+            android:summary="Turn on/off for zika notifications"
             android:defaultValue="true" />
     </PreferenceCategory>
     <PreferenceCategory

@@ -61,7 +61,11 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
+import com.google.maps.android.PolyUtil;
+import com.google.maps.android.data.kml.KmlContainer;
 import com.google.maps.android.data.kml.KmlLayer;
+import com.google.maps.android.data.kml.KmlPlacemark;
+import com.google.maps.android.data.kml.KmlPolygon;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -82,8 +86,10 @@ import static com.example.ajinkya.stayhealthysg.R.id.tab2;
  */
 
 public class Diseases extends AppCompatActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener{
-    protected double currentLatitude = 1.3521;
-    protected double currentLongitude = 103.8198;
+    ClusterNotification clusterNotification = new ClusterNotification();
+
+    protected static double currentLatitude = 1.3521;
+    protected static double currentLongitude = 103.8198;
     protected GoogleApiClient mGoogleApiClient;
 
     private int east_psi;
@@ -128,53 +134,6 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
         spec.setIndicator("SafestRoute");
         host.addTab(spec);
 
-
-        /*final LocationManager locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
-        final String locationProvider = locationManager.GPS_PROVIDER;
-        final LocationListener locationListener = new LocationListener() {
-            public void onLocationChanged(Location location) {
-                currentLatitude = location.getLatitude();
-                currentLongitude = location.getLongitude();
-            }
-
-            public void onStatusChanged(String provider, int status, Bundle extras) {
-                if(status != LocationProvider.AVAILABLE) {
-                    try {
-                        Location lastKnowLocation = locationManager.getLastKnownLocation(provider);
-                        currentLatitude = lastKnowLocation.getLatitude();
-                        currentLongitude = lastKnowLocation.getLongitude();
-                    } catch (SecurityException e){
-                        e.printStackTrace();
-                    }
-                }
-            }
-
-            public void onProviderEnabled(String provider) {
-                try {
-                    Location location = locationManager.getLastKnownLocation(provider);
-                    currentLatitude = location.getLati tude();
-                    currentLongitude = location.getLongitude();
-                } catch(SecurityException e){
-                    e.printStackTrace();
-                }
-            }
-
-            public void onProviderDisabled(String provider) {
-                try {
-                    Location lastKnowLocation = locationManager.getLastKnownLocation(provider);
-                    currentLatitude = lastKnowLocation.getLatitude();
-                    currentLongitude = lastKnowLocation.getLongitude();
-                } catch(SecurityException e){
-                    e.printStackTrace();
-                }
-            }
-        };
-        try {
-            locationManager.requestLocationUpdates(locationProvider, 0, 0, locationListener);
-        } catch (SecurityException e) {
-            e.printStackTrace();
-        }
-        */
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(this)
                 .addOnConnectionFailedListener(this)
@@ -184,6 +143,7 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
                 .build();
 
         mGoogleApiClient.connect();
+
         final SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
         String font_pref = sharedPref.getString("font_list_value", "");
         Log.v(TAG, font_pref);
@@ -199,11 +159,25 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
             }
         };
 
+        if(sharedPref.getBoolean("pref_general", true)){
+            Log.v(TAG, "Pref_general can be found");
+        }
+        if(sharedPref.getBoolean("pref_dengue", true)){
+            Log.v(TAG, "Pref_dengue can be found");
+        }
+        if(sharedPref.getBoolean("pref_malaria", true)){
+            Log.v(TAG, "Pref_malaria can be found");
+        }
+        if(sharedPref.getBoolean("pref_malaria", true)){
+            Log.v(TAG, "Pref_malaria can be found");
+        }
 
         sharedPref.registerOnSharedPreferenceChangeListener(listener);
-
+        general_alert();
         //setHaze();
-        setUV();
+        //setUV();
+        //clusterNotification.dengue_alert();
+
     }
 
     public void setFontTextSize(String size) {
@@ -303,13 +277,18 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
                 null, new Response.Listener<JSONObject>(){
             @Override
             public void onResponse(JSONObject response){
-                Log.v(TAG,"Inilah hasil JSON " + response.toString());
+                Log.v(TAG,"Inilah hasil JSON PSI " + response.toString());
                 try {
                     east_psi = response.getJSONArray("items").getJSONObject(0).getJSONObject("readings").getJSONObject("psi_twenty_four_hourly").getInt("east");
                     central_psi = response.getJSONArray("items").getJSONObject(0).getJSONObject("readings").getJSONObject("psi_twenty_four_hourly").getInt("central");
                     south_psi = response.getJSONArray("items").getJSONObject(0).getJSONObject("readings").getJSONObject("psi_twenty_four_hourly").getInt("south");
                     north_psi = response.getJSONArray("items").getJSONObject(0).getJSONObject("readings").getJSONObject("psi_twenty_four_hourly").getInt("north");
                     west_psi = response.getJSONArray("items").getJSONObject(0).getJSONObject("readings").getJSONObject("psi_twenty_four_hourly").getInt("west");
+                    Log.v(TAG,"East " + east_psi);
+                    Log.v(TAG,"East " + central_psi);
+                    Log.v(TAG,"East " + south_psi);
+                    Log.v(TAG,"East " + north_psi);
+                    Log.v(TAG,"East " + west_psi);
                 } catch(JSONException e){
                     Log.v(TAG, "There is some error");
                 }
@@ -348,14 +327,18 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
                 null, new Response.Listener<JSONObject>(){
             @Override
             public void onResponse(JSONObject response){
-                Log.v(TAG,"Inilah hasil JSON " + response.toString());
+                Log.v(TAG,"Inilah hasil JSON UV" + response.toString());
                 try {
                     uv_now = response.getJSONArray("items").getJSONObject(0).getJSONArray("index").getJSONObject(0).getInt("value");
-                    Log.v(TAG, "This is the value of east: " + uv_now);
                     uv_minus_one = response.getJSONArray("items").getJSONObject(0).getJSONArray("index").getJSONObject(1).getInt("value");
                     uv_minus_two = response.getJSONArray("items").getJSONObject(0).getJSONArray("index").getJSONObject(2).getInt("value");
                     uv_minus_three = response.getJSONArray("items").getJSONObject(0).getJSONArray("index").getJSONObject(3).getInt("value");
                     uv_minus_four = response.getJSONArray("items").getJSONObject(0).getJSONArray("index").getJSONObject(4).getInt("value");
+                    Log.v(TAG, "This is the value of uv: " + uv_now);
+                    Log.v(TAG, "This is the value of uv: " + uv_minus_one);
+                    Log.v(TAG, "This is the value of uv: " + uv_minus_two);
+                    Log.v(TAG, "This is the value of uv: " + uv_minus_three);
+                    Log.v(TAG, "This is the value of uv: " + uv_minus_four);
                 } catch(JSONException e){
                     Log.v(TAG, "There is some error");
                 }
@@ -515,28 +498,13 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
 
         getDeviceLocation();
 
-        KmlLayer kmlLayer = null;
-        KmlLayer kmlLayerZika=null;
-        KmlLayer kmlLayerMalaria=null;
+        KML.addKML(googleMap,R.raw.dengue,getApplicationContext());
+        KML.addKML(googleMap,R.raw.malaria,getApplicationContext());
+        KML.addKML(googleMap,R.raw.zika,getApplicationContext());
 
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(1.3521, 103.8198 ), 11.0f));
-        Log.v(TAG, "Lang " + currentLatitude + "long " + currentLongitude);
-        LatLng sydney = new LatLng(currentLatitude, currentLongitude);
-        googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker is on"));
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-        try{
-            kmlLayer = new KmlLayer(googleMap, R.raw.dengue,getApplicationContext());
-            kmlLayer.addLayerToMap();
-            kmlLayerZika = new KmlLayer(googleMap,R.raw.zika,getApplicationContext());
-            kmlLayerZika.addLayerToMap();
-            kmlLayerMalaria = new KmlLayer(googleMap,R.raw.malaria,getApplicationContext());
-            kmlLayerMalaria.addLayerToMap();
-        } catch(XmlPullParserException e){
-            Log.d(TAG, "GG");
-            e.printStackTrace();
-        } catch (IOException e){
-            e.printStackTrace();
-        }
+        KML.checkLocationInCluster(googleMap,R.raw.dengue,getApplicationContext());
+        KML.checkLocationInCluster(googleMap,R.raw.malaria,getApplicationContext());
+        KML.checkLocationInCluster(googleMap,R.raw.zika,getApplicationContext());
     }
 
     private void updateLocationUI() {
@@ -579,10 +547,98 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
         }
     }
 
+    private ArrayList getPolygons(Iterable<KmlContainer> containers) {
+        ArrayList<KmlPolygon> polygons = new ArrayList<>();
+
+        if (containers == null) {
+            return polygons;
+        }
+
+        for (KmlContainer container : containers) {
+            polygons.addAll(getPlacemarks(container));
+        }
+
+        return polygons;
+    }
+
+    //to get all the placemarks
+
+    private ArrayList<KmlPolygon> getPlacemarks(KmlContainer container) {
+        ArrayList<KmlPolygon> polygons = new ArrayList<>();
+
+        if (container == null) {
+            return polygons;
+        }
+
+        Iterable<KmlPlacemark> placemarks = container.getPlacemarks();
+        if (placemarks != null) {
+            for (KmlPlacemark placemark : placemarks) {
+                if (placemark.getGeometry() instanceof KmlPolygon) {
+                    polygons.add((KmlPolygon) placemark.getGeometry());
+                }
+            }
+        }
+
+        if (container.hasContainers()) {
+            polygons.addAll(getPolygons(container.getContainers()));
+        }
+
+        return polygons;
+    }
+
+
+    //
+
+    private boolean liesOnPolygon(ArrayList<KmlPolygon> polygons, LatLng test) {
+        boolean lies = false;
+
+        if (polygons == null || test == null) {
+            return lies;
+        }
+
+        for (KmlPolygon polygon : polygons) {
+            if (boundaries(polygon, test)) {
+                lies = true;
+                break;
+            }
+        }
+
+        return lies;
+    }
+
+    //
+
+    private boolean boundaries(KmlPolygon polygon, LatLng test) {
+        boolean lies = false;
+
+        if (polygon == null || test == null) {
+            return lies;
+        }
+
+
+        List<LatLng> outerBoundary = polygon.getOuterBoundaryCoordinates();
+        lies = PolyUtil.containsLocation(test, outerBoundary,true);
+
+        if (lies) {
+            ArrayList<ArrayList<LatLng>> innerBoundaries = (ArrayList) polygon.getInnerBoundaryCoordinates();
+            if (innerBoundaries != null) {
+                for (ArrayList<LatLng> innerBoundary : innerBoundaries) {
+
+                    if (PolyUtil.containsLocation(test, innerBoundary,true)) {
+                        lies =false;
+                        break;
+                    }
+                }
+            }
+        }
+
+        return lies;
+    }
+
     public void general_alert()
     {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if(prefs.getBoolean("pref_infectious", true)) {
+        if(prefs.getBoolean("pref_general", true)) {
             int uni_notif;
 
             uni_notif = (int) ((new Date().getTime() / 1000L) % Integer.MAX_VALUE);
@@ -596,91 +652,8 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
 
             Intent launchIntent = new Intent();
             launchIntent.setClassName("com.example.ajinkya.stayhealthysg", "com.example.ajinkya.stayhealthysg.Diseases");
-            PendingIntent launchPendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, launchIntent, Intent.FLAG_ACTIVITY_NEW_TASK);
+            PendingIntent launchPendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, launchIntent, PendingIntent.FLAG_ONE_SHOT);
             builder.setContentIntent(launchPendingIntent);
-
-            // Add as notification
-            NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-            manager.notify(uni_notif, builder.build());
-        }
-    }
-
-    public void dengue_alert()
-    {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if(prefs.getBoolean("pref_weather", true)) {
-            int uni_notif;
-
-            uni_notif = (int) ((new Date().getTime() / 1000L) % Integer.MAX_VALUE);
-
-
-            NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
-                    .setSmallIcon(R.mipmap.ic_launcher)
-                    .setContentTitle("You have a notification!")
-                    .setContentText("New DENGUE alert!")
-                    .setAutoCancel(true);
-
-            Intent launchIntent = new Intent();
-            launchIntent.setClassName("com.example.ajinkya.stayhealthysg", "com.example.ajinkya.stayhealthysg.Dengue");
-            PendingIntent launchPendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, launchIntent, Intent.FLAG_ACTIVITY_NEW_TASK);
-            builder.setContentIntent(launchPendingIntent);
-
-
-            // Add as notification
-            NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-            manager.notify(uni_notif, builder.build());
-        }
-    }
-
-    private void malaria_alert()
-    {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if(prefs.getBoolean("pref_haze", true)) {
-            int uni_notif;
-
-            uni_notif = (int) ((new Date().getTime() / 1000L) % Integer.MAX_VALUE);
-
-
-            NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
-                    .setSmallIcon(R.mipmap.ic_launcher)
-                    .setContentTitle("You have a notification!")
-                    .setContentText("New MALARIA alert!")
-                    .setAutoCancel(true);
-
-
-            Intent launchIntent = new Intent();
-            launchIntent.setClassName("com.example.ajinkya.stayhealthysg", ".Malaria");
-            PendingIntent launchPendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, launchIntent, Intent.FLAG_ACTIVITY_NEW_TASK);
-            builder.setContentIntent(launchPendingIntent);
-
-
-            // Add as notification
-            NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-            manager.notify(uni_notif, builder.build());
-        }
-    }
-
-    private void zika_alert()
-    {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if(prefs.getBoolean("pref_uv", true)) {
-            int uni_notif;
-
-            uni_notif = (int) ((new Date().getTime() / 1000L) % Integer.MAX_VALUE);
-
-
-            NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
-                    .setSmallIcon(R.mipmap.ic_launcher)
-                    .setContentTitle("You have a notification!")
-                    .setContentText("New ZIKA alert!")
-                    .setAutoCancel(true);
-
-
-            Intent launchIntent = new Intent();
-            launchIntent.setClassName("com.example.ajinkya.stayhealthysg", "com.example.ajinkya.stayhealthysg.Zika");
-            PendingIntent launchPendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, launchIntent, Intent.FLAG_ACTIVITY_NEW_TASK);
-            builder.setContentIntent(launchPendingIntent);
-
 
             // Add as notification
             NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
