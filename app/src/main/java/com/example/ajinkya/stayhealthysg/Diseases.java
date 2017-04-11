@@ -79,6 +79,8 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback{
 
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 
+        general_alert();
+        
         //clusterNotification.dengue_alert();
     }
 
@@ -271,6 +273,32 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback{
         return lies;
     }
 
+
+    public void general_alert()
+    {
+        int uni_notif;
+
+        uni_notif = (int) ((new Date().getTime() / 1000L) % Integer.MAX_VALUE);
+
+
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
+                .setSmallIcon(R.mipmap.ic_launcher)
+                .setContentTitle("You have a notification!")
+                .setContentText("New alert!")
+                .setAutoCancel(true)
+                ;
+
+        Intent launchIntent = new Intent();
+        launchIntent.setClassName("com.example.ajinkya.stayhealthysg", "com.example.ajinkya.stayhealthysg.Diseases");
+        PendingIntent launchPendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, launchIntent,PendingIntent.FLAG_ONE_SHOT);
+        builder.setContentIntent(launchPendingIntent);
+
+        // Add as notification
+        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        manager.notify(uni_notif, builder.build());
+
+
+    }
 
 
 }
