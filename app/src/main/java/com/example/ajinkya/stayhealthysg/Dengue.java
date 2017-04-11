@@ -1,12 +1,17 @@
 package com.example.ajinkya.stayhealthysg;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TabHost;
 
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -14,6 +19,8 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+
+import java.util.Date;
 
 import static com.example.ajinkya.stayhealthysg.R.id.dengueMapActivity;
 
@@ -72,6 +79,7 @@ public class Dengue extends AppCompatActivity implements OnMapReadyCallback{
 
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 
+        dengue_alert();
 
 }
 
@@ -108,7 +116,31 @@ The addKML() from KML class is called passing the argument of the dengue kml fil
     }
 
 
+    public void dengue_alert()
+    {
+        int uni_notif;
 
+        uni_notif = (int) ((new Date().getTime() / 1000L) % Integer.MAX_VALUE);
+
+
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
+                .setSmallIcon(R.mipmap.ic_launcher)
+                .setContentTitle("You have a notification!")
+                .setContentText("New DENGUE alert!")
+                .setAutoCancel(true)
+                ;
+
+        Intent launchIntent = new Intent();
+        launchIntent.setClassName("com.example.ajinkya.stayhealthysg", "com.example.ajinkya.stayhealthysg.Dengue");
+        PendingIntent launchPendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, launchIntent,PendingIntent.FLAG_ONE_SHOT);
+        builder.setContentIntent(launchPendingIntent);
+
+
+        // Add as notification
+        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        manager.notify(uni_notif, builder.build());
+
+    }
 
 
 }

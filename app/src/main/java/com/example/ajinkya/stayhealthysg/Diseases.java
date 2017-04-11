@@ -1,11 +1,15 @@
 package com.example.ajinkya.stayhealthysg;
 
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -25,6 +29,7 @@ import com.google.maps.android.data.kml.KmlPolygon;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -265,6 +270,7 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback{
 
         return lies;
     }
+
 
 
 }
