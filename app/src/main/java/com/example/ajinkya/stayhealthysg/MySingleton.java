@@ -2,6 +2,7 @@ package com.example.ajinkya.stayhealthysg;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.util.Log;
 import android.util.LruCache;
 
 import com.android.volley.Request;
@@ -18,6 +19,8 @@ public class MySingleton {
     private RequestQueue mRequestQueue;
     private ImageLoader mImageLoader;
     private static Context mCtx;
+
+    protected static final String TAG = Diseases.class.getSimpleName();
 
     private MySingleton(Context context){
         mCtx = context;
@@ -40,6 +43,7 @@ public class MySingleton {
 
     public static synchronized MySingleton getInstance(Context context) {
         if(mInstance == null){
+            Log.v(TAG, "Already called");
             mInstance = new MySingleton(context);
         }
         return mInstance;

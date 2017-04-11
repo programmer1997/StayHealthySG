@@ -10,17 +10,17 @@
         android:paddingLeft="0dp"
         android:layout_height="wrap_content">
 
-            <Button
-                android:id="@+id/north_east"
-                android:text="11.00"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/north_east"
+            android:text="11.00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/north_east_text"
-                android:text="53"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/north_east_text"
+            android:text="53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
     </LinearLayout>
     <LinearLayout
         android:orientation="vertical"
