@@ -1,0 +1,1211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/f01b75e45aa60754be9cbec4637a96ea8945421e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4e684205744f814a73b7752545e0661330415c9e">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c89df9a3a86c153e7dfcad8d6aaa2f4637ebe34f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/f32b8de689bee37a0d21cb4d6c35d3984f24bb33/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b215e312bdc1ee7bfda31674eab5df8bad45c014">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0df084e9a1f5d25c5e5e9f04622c9ffc9727516c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/81f5e95b32356e57e7a137a68b6b6b32e4cd5be8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="662d7533b25a666c649c10a16b42edfb95f25a4f">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_164baa161a42ff46aaf4b7ce10e5285bd3b1309c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/acdbcf195c5c8e20d7320cb5b01a48f1341bfe1e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b32372f6821e003ae24cd3389bdd7925247f100">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_79f5977dd5c4b58675033db5e32cbb4cd107a4b1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/0b9e0e4980a5c0f336e7a6b29b88e24443b4acc8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6f233cb35a6ea92364130d2d48791c461ec65983">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_be859e048a5d6763d76f42a3eadc1b22fdbe0fed/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/2f7b6cccc1f4f4e7d3b2c26665daf69707935745/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0bb2f0934fa55799508ba58ffc9ba579b35744b8">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9e194638919922d0246fd83e1ecaedd2356f3feb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/742b0bb3e128b94471137edba824cea433ec525b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44098e691b36776973374ac03afe0225b17f8a74">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_726c4178541c3669fda3fe7e18661afa0763416c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/b9b0852ae3ee4d78724080a8d3cc66d509a69c13/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="19696dc358ac668e341f28c41e3387d61ccdb81d">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_de526fde799369e64f19354638da72ea5110b60e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/d74d4a0684689179604c2e8edb4a45ed735e3cfe/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efae381df589f3d4977c346c8a980f030315bb8b">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d9f80df0c533094fe3ebc2b6e739c8190310500a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/c02f9b68e32e7ac5967480e89c519a3f524b1e28/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="12032271e6be735e811ad529cb08ff066c381640">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d2a6333663b8e29b11b8ab63867f0b87cd28e176/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/0f5040a06b01ec2db0de180813c8bc53e7bf8c3b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cfa47e1b140562d47bc670629d07e209cd8b02c4">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8f6b385376d30896d920f02c1011daf734fb74cf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/686f3371b836dfefa9681050e8b9e7ca5f631cde/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="379a48c2da13ffb7ec7134f2c715663834357670">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d18318d692bb863adb61ce1526c8a82eb1fa2e02/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/26aac9b2344ac664d002ab1fa068c293eac77481/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2e2e46e481ec791066942e5f4aca629ac9bda9b6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/433c6a5aad34bd1d2ba3e7fcd7782cf1034f1799/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3683531139103cc263b71d8b5ac6062832a8fd30">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_aa9bde6153181e750bc2954a1b6c687b1a298c51/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/9e72f52cf6ec5a0dc0917efc81ad89c05d7cd9fb/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="abf7c64e0bbaaa931738856734f76646ae62d9a5">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_671bc4264ac097f19412c12a76f999efc22c2b35/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-beta4/constraint-layout-solver-1.0.0-beta4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a9cb567dc008f570c28531720168f19148da965">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.0-beta4_c8b59794709f7db07206439eebd31c6f73c7c9c4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/89373d3b8221ba4ec9ee59331023036999c89d5e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f31796808ee87753298c6e4f3df93b097418e029/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/74a02295f9243310b548e029db7e0688b2d6da37/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a3826817a4de1daa170c33bbc04db24ab6826bd5">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_73400d30451834c2748a871f07e75033eba4016f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_8354277ca9b82e03cac4e443709090539e10e0c0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/084bbc5ed89e82ec495258e440fd3f393af27923/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c7ba26433d9e9f4429d83ff65ad79bfc801dc00a">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e35dc91447a76549e2d3a4b68d29d956113cee44/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/c476eef7bbd2ef178b0a26cea7540a478e953e3b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b2349ddfe04831042844cbf055e5a072da37ddf8">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_170acd157a28956831184ad613bc96c8033a55f7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/33cd55ea8828a98d158e7b6bbb7207e2cb78e180/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="125bce1fb2d481b964fabf75f0949957ebe9ecd1">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9621a4fa43b7d6e4fa9078cbe6c294addd8c7a18/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/7198a80d8a2032692d009c57e67dea26570a2c30/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7d67042688d34474a82fe4ef4c6514ef471377ef">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_faceadc484181d30fdb1d4ffcb931179f1cc84e9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/616a863b6b2572821ebe3d5921f0a0c54c572c19/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ee3661014cfb704e9247d4490d28a296c73dd22d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/58440712281b4013abd1b139e10c28f598583e93/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4e98ccdfe96e13178db68e50424a5a99f08282b8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/33cd55ea8828a98d158e7b6bbb7207e2cb78e180/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="125bce1fb2d481b964fabf75f0949957ebe9ecd1">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9621a4fa43b7d6e4fa9078cbe6c294addd8c7a18/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/084bbc5ed89e82ec495258e440fd3f393af27923/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c7ba26433d9e9f4429d83ff65ad79bfc801dc00a">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e35dc91447a76549e2d3a4b68d29d956113cee44/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/0e22a427a901d1767d7d64d9903fc7cba2c72c08/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_05d214b8537c5d155a93c050caf6766f1c547889/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/992d2fafd8d7df6b4411da65031ad42a32f33ecd/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da5c606c36276a12a356e351882044c6b4b9e8d4">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6bc6ae0deadd68582d2f18364de368f1f175b74c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/52ae376ce51b5dacdade7fbb86ea09a475798027/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bb115a110992b254f767f337da233071f6f940b8">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_55efc0a51e56194bbf3794ca6d1c6c3a892a0239/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/c69894a0d775688c1a296e1471ed6d7cfe4ff1f1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fcd69dc079abe9848ade29d729c56640a0169260/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/2f7b6cccc1f4f4e7d3b2c26665daf69707935745/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0bb2f0934fa55799508ba58ffc9ba579b35744b8">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9e194638919922d0246fd83e1ecaedd2356f3feb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/0b9e0e4980a5c0f336e7a6b29b88e24443b4acc8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6f233cb35a6ea92364130d2d48791c461ec65983">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_be859e048a5d6763d76f42a3eadc1b22fdbe0fed/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/83581e05cecc677f9ac20d65b6144ca42adc8fb9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ec7d3099b4e3cf23230c78acaae438f3371e1c19">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1be1a9d7a96fe70aa8389ccc361dd8edf288a9c8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/090d610c43564f55f75dcdf8da0000b6b60eafa4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c7626a9aa507bbbdc16188bc9a9f9bf3370c1ddd">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_138e4bf1636cd40d536f496384eb995dbee557bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/5be79ba94af31c28ef4de19db7120e03bd9df537/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0617b2f48d32adcd301a7130ffc7ab752f4d9f18/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/83226070540630f174272846be50028a83f00d0b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dbae35d7fc3427d30bef0037bdf61ad0d8d984f8">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e2fe237700e3f3bb1c462af7e134b0fc7cc31369/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/c3df149a6ce9ad65ff98fd6359c9c75aff6fba2c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf481b2af4d8f89935baf75972976b5681533176">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_222dbaa30f6ec14c832cdf2f1d735ca0d20548cf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/d272a7e05e2b851da2de341777aa8d52b6405cdb/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8dfe54fbaf4f2a27d395ddf806d0c011170999e0">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_10eb857ef204942940821047667067324bb88a88/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/2b4e0d851e06733f73d436815d6c9aa15fcc6089/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e4851331b3944beb6e7f77316a7661f53781da62">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_aada9567ebe6354a63413868e8bc8051766d5010/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/4e8f965137ca5c20808874013bb7b11fea79928f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b42a61cd5924f28e95894e859e6abe57847e2f3">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_43cae2eb8c00762c75a455c6f7c0ea6d62928c94/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/f586f574cf869c19b19fd8f89a5efa5d588864d5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b136ac09f209c1d91fec7db8518e33d4373c8f39">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b16e4f33172447e23b63a5dcbe0e01c886b2f4fa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/d9bfcdb0ca9e34ccf78302cf069910231c5fdf5f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_74b3bf9c2d625bce00befd00bcf27dab7e89db79/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/2b4e0d851e06733f73d436815d6c9aa15fcc6089/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e4851331b3944beb6e7f77316a7661f53781da62">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_aada9567ebe6354a63413868e8bc8051766d5010/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/e46dc429cf95d5a4fb94c717b746d5ca5b37b080/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bfd85a88cf976eb2c54507cc914d8e8914c2f71e">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a3342acc7d7c8ccefda4f15e41173eef3aceebd6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/790b700dfdfc819541678bd287522d15909fd5a8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="888983f51cf34f57a93ff16832552f2f15937212">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c8ba2c6b447154e9e35d11f0b0634ee82ed4b8cb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/d9439b6277513c44d85fa12215908f15940886f7/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d81a3b0a16f48b4456f442552b62f4b1a472ce24">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dce7d27f8558e5dd866ca05efa990bca3ab9e1bc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/f62727d5309ea2ef5b32e98574963ead3172d8e7/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e00e1bef8e0e2e8f5e4fdd952c885e0f33c412ad/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/d8c9a4bc7242a6c0dbe59f828c338438784f8638/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_657731f97390ad27c255fa77014cd823c273f163/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/f32b8de689bee37a0d21cb4d6c35d3984f24bb33/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b215e312bdc1ee7bfda31674eab5df8bad45c014">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0df084e9a1f5d25c5e5e9f04622c9ffc9727516c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/992d2fafd8d7df6b4411da65031ad42a32f33ecd/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da5c606c36276a12a356e351882044c6b4b9e8d4">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6bc6ae0deadd68582d2f18364de368f1f175b74c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/3802dd1093067d861765b1bb4e385a4f0dcce0e2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1f9df8b2bfff203397548ee400789154968adfe8">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0ac71982bead16be2903064acdaafe64c0caf5d0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/54d8ceb3c80e66d924056bbe3f554497b225ccdc/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5ee29abfc804ebd51d65a4bde424c0ee74363939">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0fa13c51b01943d93e02f225e86723abfebc74d8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_8354277ca9b82e03cac4e443709090539e10e0c0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/2b7b421b27ebdefd0fbfa8b8f37f49172e5c4aea/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d0a843615f3b5fa3a080497709f5436696149a09">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b6faa47443b2617020dbb472d2a721dd09e14d2b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/c476eef7bbd2ef178b0a26cea7540a478e953e3b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b2349ddfe04831042844cbf055e5a072da37ddf8">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_170acd157a28956831184ad613bc96c8033a55f7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/7198a80d8a2032692d009c57e67dea26570a2c30/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7d67042688d34474a82fe4ef4c6514ef471377ef">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_faceadc484181d30fdb1d4ffcb931179f1cc84e9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/984a9f6d368f6bc4b52183178bd9488da2583c9d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ab8343c3aadefce37313ceadd8bc4db1993f2ff0">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e89a29c55fa239696de17541a5082540d6a63ca3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/74a02295f9243310b548e029db7e0688b2d6da37/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a3826817a4de1daa170c33bbc04db24ab6826bd5">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_73400d30451834c2748a871f07e75033eba4016f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/7141f2c27a355c6140db3362b540d9d5ec215494/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4fb28fadb7fa8029132f277bae7c1f4e137e8ef4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/616a863b6b2572821ebe3d5921f0a0c54c572c19/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ee3661014cfb704e9247d4490d28a296c73dd22d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/984a9f6d368f6bc4b52183178bd9488da2583c9d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ab8343c3aadefce37313ceadd8bc4db1993f2ff0">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e89a29c55fa239696de17541a5082540d6a63ca3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/79dd4bcf45ff4926d1d4d4faf1574679e7428992/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a7ffe939ffd830b5d4052f3c1c4c235923790ce">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4788cb6ce14453c547007966b521cf1b4b8b151e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/e18d30ce3b743aa2f501a6c0fd44083c3a9b6f94/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_55f85fc1d95ec2185608baa09307afcef8935bd1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/58440712281b4013abd1b139e10c28f598583e93/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4e98ccdfe96e13178db68e50424a5a99f08282b8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/c69894a0d775688c1a296e1471ed6d7cfe4ff1f1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fcd69dc079abe9848ade29d729c56640a0169260/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/3cc59c4414a1bcd300e1e113a0910ae26dbf687d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cce5792fa30ee8520620f298bf920309423b180f">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b2e39bd944155ca00c07b957de044b84d10560a7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/437fa9ad840ba5a495b89d74d637707c2338f6bf/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c3c7f923e1df76640acb3a24823600f034a5d226">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c12caebc23ab68a3d95a27a22581605bd20f5bcb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/6ef6a7d94fc98829dbe51ab9d8a6d8fe284d3369/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e41a052c714bf67f743c22ed74153422ad773f88">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_834a8e10b19752fed4c1de94d0f7be86cec94f8d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/c3df149a6ce9ad65ff98fd6359c9c75aff6fba2c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf481b2af4d8f89935baf75972976b5681533176">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_222dbaa30f6ec14c832cdf2f1d735ca0d20548cf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/3802dd1093067d861765b1bb4e385a4f0dcce0e2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1f9df8b2bfff203397548ee400789154968adfe8">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0ac71982bead16be2903064acdaafe64c0caf5d0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/1234e556f51a9a891db88ed16a0dd0d1e9dc417a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="399f75732ff1ac159f9e73611536f1508bf18d3b">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e9c6f07c23897c417787cce133effc5cd4032f38/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/4e8f965137ca5c20808874013bb7b11fea79928f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b42a61cd5924f28e95894e859e6abe57847e2f3">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_43cae2eb8c00762c75a455c6f7c0ea6d62928c94/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/d272a7e05e2b851da2de341777aa8d52b6405cdb/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8dfe54fbaf4f2a27d395ddf806d0c011170999e0">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_10eb857ef204942940821047667067324bb88a88/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/5be79ba94af31c28ef4de19db7120e03bd9df537/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0617b2f48d32adcd301a7130ffc7ab752f4d9f18/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/e46dc429cf95d5a4fb94c717b746d5ca5b37b080/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bfd85a88cf976eb2c54507cc914d8e8914c2f71e">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a3342acc7d7c8ccefda4f15e41173eef3aceebd6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/d9bfcdb0ca9e34ccf78302cf069910231c5fdf5f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_74b3bf9c2d625bce00befd00bcf27dab7e89db79/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/f586f574cf869c19b19fd8f89a5efa5d588864d5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b136ac09f209c1d91fec7db8518e33d4373c8f39">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b16e4f33172447e23b63a5dcbe0e01c886b2f4fa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/7d6e1766d28ad7680dad9c75eae4994e07657be1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a2c0a12691c15db0a0bcc85a33a49c2a6caa83c0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/d9439b6277513c44d85fa12215908f15940886f7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d81a3b0a16f48b4456f442552b62f4b1a472ce24">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dce7d27f8558e5dd866ca05efa990bca3ab9e1bc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/308e1b80cad92c4047a096e91872655a9810c8d7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25f55515117e14a658120a7b01a9ea5170409db4">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_10f223354a6c31aca2e5d8380d9ee15a18effc34/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/f62727d5309ea2ef5b32e98574963ead3172d8e7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e00e1bef8e0e2e8f5e4fdd952c885e0f33c412ad/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/6ef6a7d94fc98829dbe51ab9d8a6d8fe284d3369/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e41a052c714bf67f743c22ed74153422ad773f88">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_834a8e10b19752fed4c1de94d0f7be86cec94f8d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/d656b014d18fa27c3a16db0e0a05155b2635e406/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b6818f5804ca0b5eb089d902458faea4179eca1d">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6538c40226a2aa00c54a80ec35a9355930cb8544/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/7141f2c27a355c6140db3362b540d9d5ec215494/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4fb28fadb7fa8029132f277bae7c1f4e137e8ef4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/26fff538695e58ae742328cdf1fe2c3bdc72ad08/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a1aa1dd9917e887bfe732cc5e561ae6ae8f9a84a">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_44310d0a1870393f015978ba87bf199c0e53189f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/41918a58bf6ce1496c5b31f6d1095ac2afc36ec3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d395c5142f474891c7750f13b6a85d14682f166b">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c21b500424bcc7c419cafa684e7ff07f8d7c82b3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/80b76ce2d94305acfcce5605b177348393100449/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6c74dab42788b458960618238f338d324b6f0656">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f9daccaf2871b6856396bdd9575d120b25f13f52/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/cc88c8cdc6971f1353ae28c3d37e41ed0a150759/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a8a65fd6addb363271683f272f90678b01590245/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/54d8ceb3c80e66d924056bbe3f554497b225ccdc/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5ee29abfc804ebd51d65a4bde424c0ee74363939">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0fa13c51b01943d93e02f225e86723abfebc74d8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/41fb7ea99738944f6b848eeea505be752d02b355/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a5d5553c308643a9022f15513ebdd59e9c78d82">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e6e774fdb5da1089084c9687a97e598e7576845f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/3cc59c4414a1bcd300e1e113a0910ae26dbf687d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cce5792fa30ee8520620f298bf920309423b180f">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b2e39bd944155ca00c07b957de044b84d10560a7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/79dd4bcf45ff4926d1d4d4faf1574679e7428992/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a7ffe939ffd830b5d4052f3c1c4c235923790ce">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4788cb6ce14453c547007966b521cf1b4b8b151e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/707d951d6e825a85a43df7cedd8663184d8e3ed4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="825c2e97a00df4df5b0f3081faa4fd6280cd7c72">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_87c0b98993c1adf6efadc0deae3cfea3f58b7300/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/1234e556f51a9a891db88ed16a0dd0d1e9dc417a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="399f75732ff1ac159f9e73611536f1508bf18d3b">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e9c6f07c23897c417787cce133effc5cd4032f38/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/d656b014d18fa27c3a16db0e0a05155b2635e406/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b6818f5804ca0b5eb089d902458faea4179eca1d">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6538c40226a2aa00c54a80ec35a9355930cb8544/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/e18d30ce3b743aa2f501a6c0fd44083c3a9b6f94/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_55f85fc1d95ec2185608baa09307afcef8935bd1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/d8c9a4bc7242a6c0dbe59f828c338438784f8638/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_657731f97390ad27c255fa77014cd823c273f163/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/790b700dfdfc819541678bd287522d15909fd5a8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="888983f51cf34f57a93ff16832552f2f15937212">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c8ba2c6b447154e9e35d11f0b0634ee82ed4b8cb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/7d6e1766d28ad7680dad9c75eae4994e07657be1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a2c0a12691c15db0a0bcc85a33a49c2a6caa83c0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/ef947f42d22c527d04f8166427e97201077be7b2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bb004ea36f8802bad30000e286c177691740a322">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ad41af3cbe399d380b1f173ae244a48b5c340e59/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/d74d4a0684689179604c2e8edb4a45ed735e3cfe/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efae381df589f3d4977c346c8a980f030315bb8b">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d9f80df0c533094fe3ebc2b6e739c8190310500a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/80b76ce2d94305acfcce5605b177348393100449/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6c74dab42788b458960618238f338d324b6f0656">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f9daccaf2871b6856396bdd9575d120b25f13f52/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/acdbcf195c5c8e20d7320cb5b01a48f1341bfe1e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b32372f6821e003ae24cd3389bdd7925247f100">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_79f5977dd5c4b58675033db5e32cbb4cd107a4b1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/433c6a5aad34bd1d2ba3e7fcd7782cf1034f1799/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3683531139103cc263b71d8b5ac6062832a8fd30">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_aa9bde6153181e750bc2954a1b6c687b1a298c51/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/308e1b80cad92c4047a096e91872655a9810c8d7/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25f55515117e14a658120a7b01a9ea5170409db4">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_10f223354a6c31aca2e5d8380d9ee15a18effc34/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/9e72f52cf6ec5a0dc0917efc81ad89c05d7cd9fb/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="abf7c64e0bbaaa931738856734f76646ae62d9a5">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_671bc4264ac097f19412c12a76f999efc22c2b35/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/090d610c43564f55f75dcdf8da0000b6b60eafa4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c7626a9aa507bbbdc16188bc9a9f9bf3370c1ddd">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_138e4bf1636cd40d536f496384eb995dbee557bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/0f5040a06b01ec2db0de180813c8bc53e7bf8c3b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cfa47e1b140562d47bc670629d07e209cd8b02c4">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8f6b385376d30896d920f02c1011daf734fb74cf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/b9b0852ae3ee4d78724080a8d3cc66d509a69c13/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="19696dc358ac668e341f28c41e3387d61ccdb81d">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_de526fde799369e64f19354638da72ea5110b60e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/742b0bb3e128b94471137edba824cea433ec525b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44098e691b36776973374ac03afe0225b17f8a74">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_726c4178541c3669fda3fe7e18661afa0763416c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/437fa9ad840ba5a495b89d74d637707c2338f6bf/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c3c7f923e1df76640acb3a24823600f034a5d226">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c12caebc23ab68a3d95a27a22581605bd20f5bcb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/c02f9b68e32e7ac5967480e89c519a3f524b1e28/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="12032271e6be735e811ad529cb08ff066c381640">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d2a6333663b8e29b11b8ab63867f0b87cd28e176/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/9832ce95bc86d0812e47909d0b0c870335fef40c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="536fd6afd6e1280607c5d70306eb32d385db7964">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_665d8e9cefeaba91565ef6c81bad5d2d27f23649/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/41918a58bf6ce1496c5b31f6d1095ac2afc36ec3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d395c5142f474891c7750f13b6a85d14682f166b">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c21b500424bcc7c419cafa684e7ff07f8d7c82b3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/0e22a427a901d1767d7d64d9903fc7cba2c72c08/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_05d214b8537c5d155a93c050caf6766f1c547889/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/81f5e95b32356e57e7a137a68b6b6b32e4cd5be8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="662d7533b25a666c649c10a16b42edfb95f25a4f">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_164baa161a42ff46aaf4b7ce10e5285bd3b1309c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/2bc57dd79c73dced894b81559d95d96c0f57356f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bdcc2a9572f18b8c90a3a157cab6cdfc97c6c736">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7121a39b4976e8a529e00d63320894b829061640/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/52ae376ce51b5dacdade7fbb86ea09a475798027/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bb115a110992b254f767f337da233071f6f940b8">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_55efc0a51e56194bbf3794ca6d1c6c3a892a0239/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/89373d3b8221ba4ec9ee59331023036999c89d5e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f31796808ee87753298c6e4f3df93b097418e029/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/2b7b421b27ebdefd0fbfa8b8f37f49172e5c4aea/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d0a843615f3b5fa3a080497709f5436696149a09">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b6faa47443b2617020dbb472d2a721dd09e14d2b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/41fb7ea99738944f6b848eeea505be752d02b355/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a5d5553c308643a9022f15513ebdd59e9c78d82">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e6e774fdb5da1089084c9687a97e598e7576845f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/cc88c8cdc6971f1353ae28c3d37e41ed0a150759/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a8a65fd6addb363271683f272f90678b01590245/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/26aac9b2344ac664d002ab1fa068c293eac77481/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2e2e46e481ec791066942e5f4aca629ac9bda9b6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/707d951d6e825a85a43df7cedd8663184d8e3ed4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="825c2e97a00df4df5b0f3081faa4fd6280cd7c72">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_87c0b98993c1adf6efadc0deae3cfea3f58b7300/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/83226070540630f174272846be50028a83f00d0b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dbae35d7fc3427d30bef0037bdf61ad0d8d984f8">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e2fe237700e3f3bb1c462af7e134b0fc7cc31369/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-beta4/constraint-layout-solver-1.0.0-beta4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a9cb567dc008f570c28531720168f19148da965">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.0-beta4_c8b59794709f7db07206439eebd31c6f73c7c9c4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/ef947f42d22c527d04f8166427e97201077be7b2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bb004ea36f8802bad30000e286c177691740a322">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ad41af3cbe399d380b1f173ae244a48b5c340e59/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/686f3371b836dfefa9681050e8b9e7ca5f631cde/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="379a48c2da13ffb7ec7134f2c715663834357670">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d18318d692bb863adb61ce1526c8a82eb1fa2e02/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/2bc57dd79c73dced894b81559d95d96c0f57356f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bdcc2a9572f18b8c90a3a157cab6cdfc97c6c736">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7121a39b4976e8a529e00d63320894b829061640/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/9832ce95bc86d0812e47909d0b0c870335fef40c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="536fd6afd6e1280607c5d70306eb32d385db7964">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_665d8e9cefeaba91565ef6c81bad5d2d27f23649/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/26fff538695e58ae742328cdf1fe2c3bdc72ad08/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a1aa1dd9917e887bfe732cc5e561ae6ae8f9a84a">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_44310d0a1870393f015978ba87bf199c0e53189f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/f01b75e45aa60754be9cbec4637a96ea8945421e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4e684205744f814a73b7752545e0661330415c9e">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c89df9a3a86c153e7dfcad8d6aaa2f4637ebe34f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ajinkya/.android/build-cache/83581e05cecc677f9ac20d65b6144ca42adc8fb9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ec7d3099b4e3cf23230c78acaae438f3371e1c19">
+        <dex dex="/Users/Ajinkya/AndroidStudioProjects/StayHealthySG/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1be1a9d7a96fe70aa8389ccc361dd8edf288a9c8/classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">StayHealthySG</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_trial">trial</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="DengueDescription">A dangerous disease</string>
+    <string name="defaultFontSize">Medium</string>
+    <string-array name="list_font">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+    <string-array name="list_font_values">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+</resources>

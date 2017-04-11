@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<Document id="Zika_Cluster">
+  <name>Zika_Cluster</name>
+  <Snippet></Snippet>
+  <Folder id="FeatureLayer0">
+    <name>Zika_Cluster</name>
+    <visibility>1</visibility>
+    <Snippet></Snippet>
+    <Placemark id="ID_00000">
+      <name>Zika_Cluster</name>
+      <visibility>1</visibility>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampedToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 103.9259112001797,1.33283096901881,0 103.9256259049423,1.332752018018106,0 103.925440462772,1.332701775860683,0 103.925205098092,1.332708963542897,0 103.9243920149255,1.332708993926571,0 103.9234576748494,1.332450604846059,0 103.9233686345164,1.332308390640185,0 103.9233781911043,1.332221802010718,0 103.9226421439105,1.332221828968029,0 103.9215976675351,1.333231430409417,0 103.921169723192,1.333030450119386,0 103.921205382529,1.332958664986898,0 103.9212339083651,1.332865344502343,0 103.9211839369108,1.331594769842198,0 103.9212195901284,1.331350702558392,0 103.9212552429506,1.331120992949081,0 103.9214050091784,1.330779295526239,0 103.9217045520397,1.330391651940837,0 103.9220240019521,1.330170797554638,0 103.9221951722606,1.330048759261887,0 103.9224804580844,1.329876467664985,0 103.9232364686664,1.329553411389563,0 103.9238284431212,1.329394029028874,0 103.9244917431887,1.329315042696042,0 103.9251051205392,1.329336555439624,0 103.9254332076859,1.32937961345519,0 103.9259752660393,1.329501625133874,0 103.9265101942267,1.329666708170301,0 103.9262249599672,1.331208638664472,0 103.9259112001797,1.33283096901881,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+  </Folder>
+  <Style id="PolyStyle00">
+    <LabelStyle>
+      <color>00000000</color>
+      <scale>0.000000</scale>
+    </LabelStyle>
+    <LineStyle>
+      <color>ffb71c1c</color>
+      <width>0.400000</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>7ff44336</color>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+</Document>
+</kml>

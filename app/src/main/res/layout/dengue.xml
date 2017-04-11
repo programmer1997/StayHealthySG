@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TabHost
+        android:id="@+id/dengueTabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TabWidget>
+
+            </HorizontalScrollView>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:id="@+id/dengueClusters"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:map="http://schemas.android.com/apk/res-auto"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:id="@+id/dengueMapActivity"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="439dp"
+                        tools:context="com.example.ajinkya.stayhealthysg.MapsActivity" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dengueAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                app:srcCompat="@drawable/dengueabout" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="30sp"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#ff0020"
+                                android:layout_marginTop="20dp"
+                                android:text="Common"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:text="10000-30000 SG cases per year"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:textColor="#40a7ff"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:text="Description"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:lineSpacingExtra="10dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="Dengue Fever and Dengue Haemorrhagic Fever (a more severe form) are the most common mosquito-borne viral diseases in the world.
+Dengue Fever is an illness caused by infection with a virus transmitted by the Aedes mosquito. There are four serotypes of this virus (DEN-1, DEN-2, DEN-3 and DEN-4) which can infect you.
+Dengue Fever is spread though the bite of the Aedes Mosquito."
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dengueSymptoms"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                app:srcCompat="@drawable/denguesymptoms" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:text="• Sudden, high fever"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:text="• Severe headaches"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:text="• Pain behind the eyes"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:text="• Severe joint and muscle pain"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:text="• Fatigue"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:text="• Nausea"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:text="• Vomiting"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:text="• Skin rash, which appears two to five days after the onset of fever"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:text="• Mild bleeding (such a nose bleed, bleeding gums, or easy bruising)"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:lineSpacingExtra="10dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="Sometimes, symptoms are mild and can be mistaken for those of the flu or another viral infection. Younger children and people who have never had the infection before tend to have milder cases than older children and adults. However, serious problems can develop. These include dengue hemorrhagic fever, a rare complication characterized by high fever, damage to lymph and blood vessels, bleeding from the nose and gums, enlargement of the liver, and failure of the circulatory system. The symptoms may progress to massive bleeding, shock, and death. This is called dengue shock syndrome (DSS). People with weakened immune systems as well as those with a second or subsequent dengue infection are believed to be at greater risk for developing dengue hemorrhagic fever. Doctors can diagnose dengue infection with a blood test to check for the virus or antibodies to it. If you become sick after traveling to a tropical area, let your doctor know. This will allow your doctor to evaluate the possibility that your symptoms were caused by a dengue infection."
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/denguePrevention"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                app:srcCompat="@drawable/dengueprevention" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:text="• Stay away from heavily populated residential areas, if possible"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:text="• Use mosquito repellents, even indoors"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:text="• When outdoors, wear long-sleeved shirts and long pants tucked into socks"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:text="• When indoors, use air conditioning if available"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:text="• Make sure window and door screens are secure and free of holes. If sleeping areas are not screened or air conditioned, use mosquito nets"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:text="• Get rid of places where mosquitoes can breed. These include old tires, cans, or flower pots that collect rain"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:text="• Regularly change the water in outdoor bird baths and pets' water dishes"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="20dp"
+                                android:lineSpacingExtra="10dp"
+                                android:text="There is no vaccine to prevent dengue fever. The best way to prevent the disease is to prevent bites by infected mosquitoes, particularly if you are living in or traveling to a tropical area. This involves protecting yourself and making efforts to keep the mosquito population down."
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dengueTreatment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                app:srcCompat="@drawable/denguetreatment" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="20dp"
+                                android:lineSpacingExtra="10dp"
+                                android:text="There is no specific medicine to treat dengue infection. If you think you may have dengue fever, you should use pain relievers with acetaminophen and avoid medicines with aspirin, which could worsen bleeding. You should also rest, drink plenty of fluids, and see your doctor. If you start to feel worse in the first 24 hours after your fever goes down, you should get to a hospital immediately to be checked for complications."
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>
