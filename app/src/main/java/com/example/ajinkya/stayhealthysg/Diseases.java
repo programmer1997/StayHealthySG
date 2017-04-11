@@ -44,7 +44,7 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback{
 
 
 
-    ClusterNotification clusterNotification=new ClusterNotification();
+    ClusterNotification clusterNotification = new ClusterNotification();
     double currentLatitude = 1.3521;
     double currentLongitude = 103.8198;
     private GoogleApiClient mGoogleApiClient;
@@ -79,9 +79,8 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback{
 
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 
-        general_alert();
+        dengue_alert();
 
-        //clusterNotification.dengue_alert();
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -273,7 +272,10 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback{
         return lies;
     }
 
-    public void general_alert()
+
+
+
+    public void dengue_alert()
     {
         int uni_notif;
 
@@ -283,19 +285,19 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback{
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setContentTitle("You have a notification!")
-                .setContentText("New alert!")
+                .setContentText("New DENGUE alert!")
                 .setAutoCancel(true)
                 ;
 
         Intent launchIntent = new Intent();
-        launchIntent.setClassName("com.example.ajinkya.stayhealthysg", "com.example.ajinkya.stayhealthysg.Diseases");
+        launchIntent.setClassName("com.example.ajinkya.stayhealthysg", "com.example.ajinkya.stayhealthysg.Dengue");
         PendingIntent launchPendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, launchIntent,PendingIntent.FLAG_ONE_SHOT);
         builder.setContentIntent(launchPendingIntent);
+
 
         // Add as notification
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         manager.notify(uni_notif, builder.build());
-
 
     }
 

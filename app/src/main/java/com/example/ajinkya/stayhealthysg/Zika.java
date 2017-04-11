@@ -31,6 +31,7 @@ import static com.example.ajinkya.stayhealthysg.R.id.zikaMapActivity;
  */
 
 public class Zika extends AppCompatActivity implements OnMapReadyCallback{
+
     double currentLatitude = 1.3521;
     double currentLongitude = 103.8198;
     private GoogleApiClient mGoogleApiClient;
@@ -82,7 +83,7 @@ public class Zika extends AppCompatActivity implements OnMapReadyCallback{
 
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 
-        zika_alert();
+
 
     }
 

@@ -18,13 +18,13 @@ public class ClusterNotification extends AppCompatActivity
 {
 
 
-   public void general_alert(View view)
+   public void general_alert()
    {
       int uni_notif;
 
       uni_notif = (int) ((new Date().getTime() / 1000L) % Integer.MAX_VALUE);
 
-
+      // notification UI content and actions
       NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
               .setSmallIcon(R.mipmap.ic_launcher)
               .setContentTitle("You have a notification!")
@@ -32,6 +32,7 @@ public class ClusterNotification extends AppCompatActivity
               .setAutoCancel(true)
               ;
 
+      // associate launch target
       Intent launchIntent = new Intent();
       launchIntent.setClassName("com.example.ajinkya.stayhealthysg", "com.example.ajinkya.stayhealthysg.Diseases");
       PendingIntent launchPendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, launchIntent,PendingIntent.FLAG_ONE_SHOT);
@@ -44,7 +45,7 @@ public class ClusterNotification extends AppCompatActivity
 
    }
 
-   public void dengue_alert(View view)
+   public void dengue_alert()
    {
       int uni_notif;
 
@@ -70,7 +71,7 @@ public class ClusterNotification extends AppCompatActivity
 
    }
 
-   public void malaria_alert(View view)
+   public void malaria_alert()
    {
       int uni_notif;
 
@@ -97,7 +98,7 @@ public class ClusterNotification extends AppCompatActivity
 
    }
 
-   public void zika_alert(View view)
+   public void zika_alert()
    {
 
       int uni_notif;

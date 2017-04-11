@@ -28,6 +28,7 @@ import static com.example.ajinkya.stayhealthysg.R.id.dengueMapActivity;
  * Created by Ajinkya on 24/3/17.
  */
 public class Dengue extends AppCompatActivity implements OnMapReadyCallback{
+
     double currentLatitude = 1.3521;
     double currentLongitude = 103.8198;
     private GoogleApiClient mGoogleApiClient;
@@ -79,7 +80,6 @@ public class Dengue extends AppCompatActivity implements OnMapReadyCallback{
 
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 
-        dengue_alert();
 
 }
 
