@@ -31,6 +31,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TabHost;
 import android.widget.TextView;
@@ -95,6 +96,8 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
     private int uv_minus_two;
     private int uv_minus_three;
     private int uv_minus_four;
+
+    SharedPreferences.OnSharedPreferenceChangeListener listener;
 
     protected Location mLastKnownLocation;
     protected GoogleMap mMap;
@@ -176,12 +179,113 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
                 .addApi(Places.PLACE_DETECTION_API)
                 .build();
 
-        mGoogleApiClient.connect();
+        final SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+        String font_pref = sharedPref.getString("font_list_value", "");
+        Log.v(TAG, font_pref);
 
-        PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
+        listener = new SharedPreferences.OnSharedPreferenceChangeListener() {
+
+            @Override
+            public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+                if (key.equals("font_list_value")) {
+                    Log.v(TAG,"Sudah dipanggil font_list_value");
+                    setFontTextSize(sharedPref.getString(key, ""));
+                }
+            }
+        };
+
+        sharedPref.registerOnSharedPreferenceChangeListener(listener);
 
         setHaze();
         setUV();
+    }
+
+    public void setFontTextSize(String size) {
+        Log.v(TAG, "Chang the size to " + size);
+        if(size == "Large") {
+            TextView tv1 = (TextView) findViewById(R.id.text1);
+            tv1.setTextSize(20);
+
+            TextView tv2 = (TextView) findViewById(R.id.text1_1);
+            tv2.setTextSize(20);
+
+            Button tv3 = (Button) findViewById(R.id.dengueButton);
+            tv3.setTextSize(20);
+
+            TextView tv4 = (TextView) findViewById(R.id.text2);
+            tv4.setTextSize(20);
+
+            TextView tv5 = (TextView) findViewById(R.id.text2_1);
+            tv5.setTextSize(20);
+
+            Button tv6 = (Button) findViewById(R.id.malariaButton);
+            tv6.setTextSize(20);
+
+            TextView tv7 = (TextView) findViewById(R.id.text3);
+            tv7.setTextSize(20);
+
+            TextView tv8 = (TextView) findViewById(R.id.text3_1);
+            tv8.setTextSize(20);
+
+            Button tv9 = (Button) findViewById(R.id.zikaButton);
+            tv9.setTextSize(20);
+        }
+        else if(size == "Small") {
+            TextView tv1 = (TextView) findViewById(R.id.text1);
+            tv1.setTextSize(12);
+
+            TextView tv2 = (TextView) findViewById(R.id.text1_1);
+            tv2.setTextSize(12);
+
+            Button tv3 = (Button) findViewById(R.id.dengueButton);
+            tv3.setTextSize(12);
+
+            TextView tv4 = (TextView) findViewById(R.id.text2);
+            tv4.setTextSize(12);
+
+            TextView tv5 = (TextView) findViewById(R.id.text2_1);
+            tv5.setTextSize(12);
+
+            Button tv6 = (Button) findViewById(R.id.malariaButton);
+            tv6.setTextSize(12);
+
+            TextView tv7 = (TextView) findViewById(R.id.text3);
+            tv7.setTextSize(12);
+
+            TextView tv8 = (TextView) findViewById(R.id.text3_1);
+            tv8.setTextSize(12);
+
+            Button tv9 = (Button) findViewById(R.id.zikaButton);
+            tv9.setTextSize(12);
+        }
+        else if(size == "Medium"){
+            TextView tv1 = (TextView) findViewById(R.id.text1);
+            tv1.setTextSize(16);
+
+            TextView tv2 = (TextView) findViewById(R.id.text1_1);
+            tv2.setTextSize(16);
+
+            Button tv3 = (Button) findViewById(R.id.dengueButton);
+            tv3.setTextSize(16);
+
+            TextView tv4 = (TextView) findViewById(R.id.text2);
+            tv4.setTextSize(16);
+
+            TextView tv5 = (TextView) findViewById(R.id.text2_1);
+            tv5.setTextSize(16);
+
+            Button tv6 = (Button) findViewById(R.id.malariaButton);
+            tv6.setTextSize(16);
+
+            TextView tv7 = (TextView) findViewById(R.id.text3);
+            tv7.setTextSize(16);
+
+            TextView tv8 = (TextView) findViewById(R.id.text3_1);
+            tv8.setTextSize(16);
+
+            Button tv9 = (Button) findViewById(R.id.zikaButton);
+            tv9.setTextSize(16);
+        }
     }
 
     public void setHaze(){
@@ -221,8 +325,11 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
             }
         };
 
-        MySingleton.getInstance(this).addToRequestQueue(req);
+        req.setShouldCache(false);
 
+        MySingleton.getInstance(this).getRequestQueue().getCache().clear();
+
+        MySingleton.getInstance(this).addToRequestQueue(req);
         Log.v(TAG, "Mantap");
     }
 
@@ -263,6 +370,10 @@ public class Diseases extends AppCompatActivity implements OnMapReadyCallback, G
                 return headers;
             }
         };
+
+        req.setShouldCache(false);
+
+        MySingleton.getInstance(this).getRequestQueue().getCache().clear();
 
         MySingleton.getInstance(this).addToRequestQueue(req);
 
