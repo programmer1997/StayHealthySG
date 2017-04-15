@@ -22,7 +22,7 @@ import com.google.android.gms.maps.model.LatLng;
 public abstract class LocationFunctions extends AppCompatActivity implements OnMapReadyCallback,GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 
     static double  currentLatitude = 1.3521;
-     static double   currentLongitude = 103.8198;
+    static double   currentLongitude = 103.8198;
     private GoogleApiClient mGoogleApiClient;
     private Location mLastLocation;
     private static final String TAG = Diseases.class.getSimpleName();

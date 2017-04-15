@@ -19,17 +19,16 @@ import org.xmlpull.v1.XmlPullParserException;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import static com.example.ajinkya.stayhealthysg.LocationFunctions.currentLatitude;
-import static com.example.ajinkya.stayhealthysg.LocationFunctions.currentLongitude;
-
+import static com.example.ajinkya.stayhealthysg.Diseases.currentLatitude;
+import static com.example.ajinkya.stayhealthysg.Diseases.currentLongitude;
 
 /**
  * Created by Ajinkya on 10/4/17.
  * This is a class with all the function related to Adding KML layer and checking whether your location lies in the KML polygon.
  */
 
-public abstract   class KML extends AppCompatActivity {
-     NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
+public abstract  class KML extends AppCompatActivity {
+    NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
             .setSmallIcon(R.mipmap.ic_launcher)
             .setContentTitle("You have a notification!")
             .setContentText("New alert!")
@@ -46,7 +45,7 @@ public abstract   class KML extends AppCompatActivity {
     The code also narrows down the focus to Singapore.
     */
 
-    public   static void addKML(GoogleMap googleMap, int ref, Context context){
+    public static void addKML(GoogleMap googleMap, int ref, Context context){
         try{
             googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(1.3521, 103.8198 ), 11.0f));
             LatLng singapore = new LatLng(currentLatitude, currentLongitude);
@@ -79,8 +78,8 @@ public abstract   class KML extends AppCompatActivity {
             boolean isInside = liesOnPolygon(polygonsInLayer, latLngTest);
             if(isInside==false) ;
             //NotificationManager notificationManager = (NotificationManager)
-                    //getSystemService(NOTIFICATION_SERVICE);
-           // notificationManager.notify(0,builder.build());
+            //getSystemService(NOTIFICATION_SERVICE);
+            // notificationManager.notify(0,builder.build());
 
         } catch (XmlPullParserException e) {
 
@@ -98,7 +97,7 @@ public abstract   class KML extends AppCompatActivity {
 
 
 
-        // a function To get all the containers in the KML Document
+    // a function To get all the containers in the KML Document
 
     private  static ArrayList getPolygons(Iterable<KmlContainer> containers) {
         ArrayList<KmlPolygon> polygons = new ArrayList<>();
