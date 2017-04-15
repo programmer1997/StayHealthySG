@@ -67,7 +67,6 @@ public abstract  class KML extends AppCompatActivity {
     /*
     This a method which checks whether your present location is in any of the clusters
     For presentation, the mock location layLngTest has been included
-    Ideally it should check the present location of the person using the function in the LocationFunctions class
      */
     public static void checkLocationInCluster(GoogleMap googleMap,int ref,Context context){
         LatLng latLngTest=new LatLng(103.9416328865264,1.349915568981681);

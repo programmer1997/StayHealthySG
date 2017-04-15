@@ -31,12 +31,6 @@ import java.util.Date;
  */
 public class Malaria extends AppCompatActivity implements OnMapReadyCallback{
 
-    double currentLatitude = 1.3521;
-    double currentLongitude = 103.8198;
-    private GoogleApiClient mGoogleApiClient;
-    private Location mLastLocation;
-    private static final String TAG = Diseases.class.getSimpleName();
-    MapFragment fragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,7 +75,7 @@ public class Malaria extends AppCompatActivity implements OnMapReadyCallback{
 
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 
-
+        malaria_alert();
 
     }
 

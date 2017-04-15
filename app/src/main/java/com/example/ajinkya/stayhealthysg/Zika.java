@@ -83,7 +83,7 @@ public class Zika extends AppCompatActivity implements OnMapReadyCallback{
 
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 
-
+        zika_alert();
 
     }
 
